@@ -1,0 +1,19 @@
+<Query Kind="Expression">
+  <Reference>&lt;RuntimeDirectory&gt;\System.Numerics.dll</Reference>
+  <NuGetReference>Newtonsoft.Json</NuGetReference>
+  <Namespace>Newtonsoft.Json</Namespace>
+</Query>
+
+/* 
+	If you have a Developer/Premium license, you can easily save your current references and namespaces (and other 
+	properties) to a snippet and then recall that snippet whenever you want - with just a few keystrokes.
+
+	This query includes the Json.NET NuGet reference and the Newtonsoft.Json namespace.
+	Press F4, and click 'Save as snippet'. Save it to a simple name such as 'json'.
+	
+	Then, create a new query with Ctrl+N and type num followed by the TAB key. Your references/namespaces
+	will be instantly added to the new query.
+	
+	This feature is particularly useful when you have a big set of references or namespaces (e.g., WPF development). */
+
+JsonConvert.SerializeObject (new { X = 123, Y = 234 })
