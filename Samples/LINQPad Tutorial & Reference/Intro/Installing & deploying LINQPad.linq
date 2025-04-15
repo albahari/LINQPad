@@ -14,4 +14,7 @@
 	LINQPad automatically updates itself when a newer version is released.
 	
 	LINQPad also supports portable deployment - see query://../Portable_(xcopy)_Deployment
+	
+	Tip: If you have Windows Dev Drive installed, LINQPad will automatically detect and use
+	     it for temporary and intermediate files to improve performance.
 */

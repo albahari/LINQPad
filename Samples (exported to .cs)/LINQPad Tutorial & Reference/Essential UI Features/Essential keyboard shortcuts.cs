@@ -35,9 +35,11 @@ Ctrl+Space           - auto-complete                (same as Visual Studio)
 Ctrl+Shift+Space     - parameter info               (same as Visual Studio)
 Alt+Enter or Ctrl+.  - open smart tag               (same as Visual Studio)
 F2                   - rename symbol                (same as Visual Studio)
-F12                  - go to definition             (same as Visual Studio)
+F12                  - go to definition*            (same as Visual Studio)
 Ctrl+Shift+Up/Down   - go to prev/next symbol       (same as Visual Studio)
 Ctrl+E,D             - format document              (same as Visual Studio)
+
+*F12 invokes ILSpy if the definition is not within the source code.
 
 
 Go to Help | 'Keyboard Shorcuts' to view all keyboard/mouse shortcuts. */

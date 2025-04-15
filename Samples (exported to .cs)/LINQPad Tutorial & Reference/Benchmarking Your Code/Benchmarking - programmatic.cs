@@ -8,7 +8,7 @@ using System.Security.Cryptography
 // To use programmatic benchmarking, go to the Query meny and choose "Add Programmatic Benchmark support"
 // (you can try this with another query).
 //
-// This does a copule of things. First, it adds the following #load directive to your query:
+// This does a couple of things. First, it adds the following #load directive to your query:
 
 
 

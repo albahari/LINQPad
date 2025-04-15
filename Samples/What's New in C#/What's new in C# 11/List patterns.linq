@@ -1,7 +1,7 @@
 <Query Kind="Statements" />
 
 // List patterns work with any collection type that is countable (with a Count/Length property)
-// and indexable (with an int-type indexer). Following is a demo of each new list pattern.
+// and indexable (with an Index- or int-type indexer). Following is a demo of each new list pattern.
 
 int[] numbers = { 0, 1, 2, 3, 4 };
 

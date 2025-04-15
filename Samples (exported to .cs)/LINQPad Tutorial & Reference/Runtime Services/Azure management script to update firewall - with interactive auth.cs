@@ -84,8 +84,4 @@ class LINQPadTokenCredential : TokenCredential
 	}
 }
 
-public static async Task<string> GetMyIPAddress()
-{
-	var ip = await new HttpClient().GetStringAsync ("http://checkip.dyndns.org/").ConfigureAwait (false);
-	return Regex.Match (ip, @"Address: (\d+\.\d+\.\d+\.\d+)").Groups [1].Value;
-}
+public static Task<string> GetMyIPAddress() => new HttpClient().GetStringAsync ("https://api.ipify.org/?format=text");

@@ -22,3 +22,5 @@ var c2 = new Complex (0, 10);
 // TIP: Hit Ctrl+Shift+N to create a new query with the same references & namespaces.
 //
 // (If you forget these shortcuts, both options are on the File menu.)
+
+// LINQPad also lets you add normal 'using' directives to the top of a query if you prefer.

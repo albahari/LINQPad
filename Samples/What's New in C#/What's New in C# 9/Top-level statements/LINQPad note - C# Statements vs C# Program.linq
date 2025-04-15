@@ -3,12 +3,12 @@
 </Query>
 
 // ... which leads to the question, what can you do in LINQPad's 'C# Program' mode that you can't
-// do in 'C# Statements' mode? Will 'C# Program' mode - with its Main() method - disappear from LINQPad?
+// do in 'C# Statements' mode?
 //
-// It still has a bunch of tricks! First, you can declare static variables/constants/methods,
-// which can be used unqualified anywhere in the script:
+// First, you can declare static variables/constants/methods, which can be used unqualified
+// anywhere in the script:
 
-public const int CurrentNetCoreVersion = 5;
+public const int CurrentScriptVersion = 5;
 public static string Pascal (string s) => s == "" ? "" : char.ToUpper (s[1]) + s.Substring(2);
 
 [DllImport ("shell32.dll", EntryPoint = "#680")]
@@ -24,7 +24,7 @@ namespace Test
 {
 	class Foo
 	{
-		static int X => CurrentNetCoreVersion;       // we can see CurrentNetCoreVersion here
+		static int X => CurrentScriptVersion;       // we can see CurrentScriptVersion here
 	}
 }
 

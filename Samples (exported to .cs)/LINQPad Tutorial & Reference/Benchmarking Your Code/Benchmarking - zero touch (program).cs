@@ -18,7 +18,7 @@ void Main()
 
 string testString = "The QUICK brown Fox jumps OVER the LAZY dog, WHILE thinking OF a SECURE pAsSwrd!@#$%^&*()[]{};':.";
 
-// You can also benchmark complete method(s). Select the four methods below and press Ctrl+Shift+B:
+// You can also benchmark complete method(s). Select all four methods below and press Ctrl+Shift+B:
 
 void ToUpper() =>            testString.ToUpper();
 void ToUpperInvariant() =>   testString.ToUpperInvariant();

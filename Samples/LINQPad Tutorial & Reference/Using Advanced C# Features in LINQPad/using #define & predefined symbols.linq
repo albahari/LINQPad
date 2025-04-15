@@ -17,7 +17,7 @@
 	"Command-line".Dump();
 #endif
 
-#if NETCORE                      // true if running .NET Core 3 or later (i.e., LINQPad 6+ rather than LINQPad 5)
+#if NETCORE                      // true if running .NET Core 3 or later (i.e., LINQPad 6/7/8+ rather than LINQPad 5)
 	".NET Core".Dump();
 #else
 	".NET Framework".Dump();     // must be running in LINQPad 5
@@ -29,6 +29,19 @@
 
 #if NET6
 	"You're on .NET 6 or later".Dump();
+#endif
+
+#if NET7
+	"You're on .NET 7 or later".Dump();
+#endif
+
+#if NET8
+	"You're on .NET 8 or later".Dump();
+#endif
+
+// If you enjoy typing, you can also use the Visual Studio-compatible symbols:
+#if NET8_0_OR_GREATER
+	"You're on .NET 8 or later".Dump();
 #endif
 
 #if LINQPAD

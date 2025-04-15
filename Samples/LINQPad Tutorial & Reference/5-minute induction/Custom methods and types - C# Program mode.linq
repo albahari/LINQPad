@@ -1,29 +1,35 @@
 <Query Kind="Program" />
 
 // If you change the language dropdown in the toolbar to 'C# Program', LINQPad will add a Main() method.
-// This enables a bunch of advanced features, such as the ability to define global (static) constants and methods:
-
-public const string SomeConstant = "Put an end to those hundreds of Visual Studio Console projects cluttering your source folder!";
-public static string SomeMethod (string input) => input.ToUpper();
+// This breaks you free of the restrictions of top-level statements, unlocking all of LINQPad's power.
 
 void Main()
 {
+	SayHello();
+	SayHello ("Hello, world!");
 	new MyClass().GetHelloMessage().Dump();
 }
 
+// Method overloading is permitted:
+void SayHello() => "Hello, world".Dump();
+void SayHello (string greeting) => greeting.Dump();
+
+// Static members are also permitted. Static members can be accessed from inside classes (below)
+public static string Shout (string input) => input.ToUpper();
+
 class MyClass
 {
-	// We can access SomeConstant and SomeMethod here:
-	public string GetHelloMessage() => SomeMethod (SomeConstant);
+	// We can access SomeMethod here:
+	public string GetHelloMessage() => Shout ("Hello, world");
 }
 
 namespace Foo
 {
 	class Bar
 	{		
-		// You can also access SomeConstant and SomeMethod here
+		// You can also access SomeMethod here
 	}
 }
 
 // For a full description of what you can do in 'C# Program' mode, click the link below:
-// query://../../What's_New_in_C#_9/Top-level_statements/LINQPad_note_-_C#_Statements_vs_C#_Program 
+// query://../../What's_New_in_C#/What's_New_in_C#_9/Top-level_statements/LINQPad_note_-_C#_Statements_vs_C#_Program 

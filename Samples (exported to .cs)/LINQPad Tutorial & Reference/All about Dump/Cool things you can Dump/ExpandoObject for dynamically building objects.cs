@@ -13,10 +13,3 @@ for (int i = 0; i < 10; i++)
 
 expando.Dump ("expando");
 Enumerable.Repeat (expando, 5).Dump ("expando list");
-
-// Util.ToExpando converts an existing object it an expando that you can then customize:
-
-var timeZone = Util.ToExpando (TimeZoneInfo.Local);
-timeZone.Remove ("StandardName", out _);                         // Remove a property
-timeZone.TryAdd ("My Extra Property", Util.Highlight ("foo"));   // Add a property
-timeZone.Dump ("TimeZone");

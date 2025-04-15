@@ -4,6 +4,8 @@
 // Then press F11 to step. Unlike in Visual Studio, execution continues until the *current thread* 
 // encounters the next instruction. This makes it much easier to track what a thread is doing.
 //
+// (You can also step all threads using the 'Step All Threads' options on the Debug menu.)
+//
 // Click on the Threads debug window to see what each thread is doing. To switch to another thread,
 // double-click the thread (or Ctrl+Click the thread icon in the editor margin).
 

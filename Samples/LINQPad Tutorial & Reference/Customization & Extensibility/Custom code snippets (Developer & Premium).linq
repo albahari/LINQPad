@@ -16,4 +16,4 @@ LINQPad snippets are stored in <My Documents>/LINQPad Snippets by default.
 You can change this in Edit | Preferences | Folders.
 
 TIP: LINQPad also picks up any custom snippets that you've written for Visual Studio. These are
-	 stored in <My Documents>/Visual Studio 2017\Code Snippets
+	 stored in <My Documents>/Visual Studio 2017\Code Snippets */

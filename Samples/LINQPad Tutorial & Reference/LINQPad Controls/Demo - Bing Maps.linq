@@ -5,9 +5,7 @@
 </Query>
 
 // This demonstrates how to use Bing Maps, as well as JavaScript interop and custom event handling.
-//
-// For Bing Maps API documentation, see
-// https://docs.microsoft.com/en-us/bingmaps/v8-web-control/creating-and-hosting-map-controls/
+// NB: The Bing Maps API is in the process of being retired. See the 'Google Maps' demo for an alternative.
 
 bool haveMapsAPIKey = false;   // Change this to true if you have an Bing Maps API key
 

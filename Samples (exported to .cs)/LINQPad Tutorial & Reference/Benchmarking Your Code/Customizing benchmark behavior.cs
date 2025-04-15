@@ -9,7 +9,8 @@ using System.Security.Cryptography
 
 // Most of the code that controls benchmarking is inside a query that you can customize
 // called "BenchmarkDotNet.linq.  By editing this query, you can change the way that LINQPad
-// interfaces with BenchmarkDotNet - and the way it displays results.
+// interfaces with BenchmarkDotNet - and the way it displays results. Any changes you make
+// to this query are merged with subsequent updates.
 //
 // You can change the way LINQPad behaves in zero-touch mode, as well as in programmatic mode.
 

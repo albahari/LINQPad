@@ -25,5 +25,8 @@ new GroupBox
 	Padding = new Thickness (5)	
 }
 
+// You can also dump Avalonia controls.
+// See query://../Avalonia
+
 // LINQPad also provides HTML controls that you can dump inline.
 // See query://../../LINQPad_Controls

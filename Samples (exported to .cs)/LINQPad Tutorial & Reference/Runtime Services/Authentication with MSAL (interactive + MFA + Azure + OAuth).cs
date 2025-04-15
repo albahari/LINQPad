@@ -4,9 +4,14 @@
 // This includes support for interactive multi-factor authentication.
 //
 // This is useful for a couple of reasons:
-//  (a) It requires less code than using the Microsoft Authentication Library (MSAL) directly.
-//  (b) LINQPad scopes the authentication token cache to the GUI host process, so you never have to
-//      re-authenticate unless you restart LINQPad.
+//   (a) It requires less code than using the Microsoft Authentication Library (MSAL) directly.
+//   (b) LINQPad stores the authentication cache in the GUI host process, so you don't have to keep re-authenticating.
+//
+// By default, LINQPad stores access tokens in memory. If you prefer, you can persist them to disk by clicking a
+// checkbox on the authentication dialog. This will mean:
+//   (a) not having to re-authenticate after restarting LINQPad
+//   (b) being able to share tokens between multiple instances of LINQPad
+// LINQPad uses the Microsoft.Identity.Client.Extensions.Msal library to perform this job securely.
 
 // In this example, we authenticate to the Azure Global Cloud Management API interactively.
 

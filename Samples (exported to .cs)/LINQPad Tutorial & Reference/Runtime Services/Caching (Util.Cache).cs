@@ -9,6 +9,13 @@ expensiveValue.Dump();
 
 int ExpensiveValue()
 {
-	Thread.Sleep(5000);
+	Thread.Sleep(3000);
 	return 123;
 }
+
+// Here's the same thing with a lambda expression
+expensiveValue = Util.Cache (() => { Thread.Sleep (3000); return 123; }, "someOtherKey");
+expensiveValue.Dump();
+
+// You can optionally specify a time-to-live (after which the cache entry will expire).
+// The TTL excludes fetch time, and is ignored when the item's already in the cache.

@@ -13,3 +13,5 @@ new Hyperlinq (() => RSA.Create().ToXmlString (true).Dump(), "Generate public/pr
 // The third is to execute dynamically generated code on demand:
 new Hyperlinq (QueryLanguage.Statements, "for (int i = 0; i < 10; i++) i.Dump();", "Dynamically generated code").Dump();
 
+// LINQPad also has a more low-level Hyperlink class in the LINQPad.Controls namespace
+// see query://../../LINQPad_Controls

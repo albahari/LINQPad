@@ -18,7 +18,7 @@ Here are a few more tips for giving presentations:
  *	If you have a cordless clicker, you can use this to advance through queries, and to execute them.
 	Go to Edit | Preferences | Advanced, General, and set 'Enable presentation mode' to true. 
  
- *	To adjust font size, use Control+MouseWheel, or Control+] / Control+[
+ *	To adjust font size, use Control+MouseWheel, or Ctrl+Shift+Minus / Ctrl+Shift+Plus
 	This works in both the editor and in query results.
 	
  */

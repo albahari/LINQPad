@@ -15,6 +15,7 @@ You can reference:
 	- NuGet packages (Developer/Premium edition - click 'Add NuGet' or Shift+Ctrl+P)
 	- Other files such as text, JSON and XML files (these will get copied to the application base folder)
 	- The ASP.NET Core Framework (press F4 and tick the checkbox)
+	- The Windows SDK (press F4 and tick the checkbox)
 
 After adding references, you can make this the default by clicking 'Set as default for new queries'.
 

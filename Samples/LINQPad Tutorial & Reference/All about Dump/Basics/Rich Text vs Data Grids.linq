@@ -8,7 +8,7 @@
 
 CultureInfo.GetCultures (CultureTypes.NeutralCultures)
 
-// With data grids, sub-objects are no longer rendered inline, and some advanced Dump features are disabled.
+// With data grids, sub-objects are no longer rendered inline, and some Dump features are disabled.
 //
 // However, you can:
 //  - see any number of rows (limited only by memory)

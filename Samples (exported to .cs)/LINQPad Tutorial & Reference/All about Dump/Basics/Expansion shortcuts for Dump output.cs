@@ -11,3 +11,6 @@ Try running this query, then press:
 	Alt+3 - to collapse to 3 levels    */
 
 CultureInfo.CurrentCulture.DateTimeFormat.Dump();
+
+// You can set the initial collapse level with the collapseTo parameter:
+// CultureInfo.CurrentCulture.DateTimeFormat.Dump (collapseTo:1);

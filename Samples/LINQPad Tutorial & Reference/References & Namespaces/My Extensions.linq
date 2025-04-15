@@ -23,3 +23,6 @@ public static class MyExtensions
 //      This jumps into 'My Extensions', too.
 //
 // TIP: You can navigate directly to 'My Extensions' with Ctrl+Shift+Y (see File menu)
+//
+// TIP: You can disable 'My Extensions' for a particular query via the checkbox in Query Properties (F4, Advanced)
+//      or by pressing Alt+Shift+Y. This is sometimes useful in avoiding conflicts.
