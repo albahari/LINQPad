@@ -1,11 +1,11 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // As you type a URI into the textbox below, it automatically creates and dumps the properties of a Uri object.
 // We use a DumpContainer to update the Uri in place (rather than calling Dump which *appends* to the output window).
 
-var textBox = new TextBox ("http://www.linqpad.net").Dump();
+var textBox = new TextBox ("https://www.linqpad.net").Dump();
 
 var dc = new DumpContainer (Util.ToExpando (new Uri (textBox.Text))).Dump();
 
@@ -17,4 +17,4 @@ textBox.Focus();
 // Replace the last line with the following:
 //
 // textBox.TextInput += (sender, args) => dc.Content = Util.Try<object> (() => new Uri (textBox.Text), ex => ex);
-new Uri ("http://www.linqpad").Dump();
+new Uri ("https://www.linqpad").Dump();

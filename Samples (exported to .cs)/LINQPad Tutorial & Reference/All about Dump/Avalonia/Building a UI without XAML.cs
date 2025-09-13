@@ -4,20 +4,19 @@
 #r: "nuget: Avalonia.Themes.Fluent"
 #r: "nuget: Avalonia.Win32.Interoperability"
 
-using Avalonia
-using Avalonia.Controls
-using Avalonia.Controls.ApplicationLifetimes
-using Avalonia.Data
-using Avalonia.Input
-using Avalonia.Interactivity
-using Avalonia.Layout
-using Avalonia.Markup.Xaml
-using Avalonia.Media
-using Avalonia.Styling
-using Avalonia.Themes.Fluent
-using Avalonia.Win32.Interoperability
-using System.ComponentModel
-using System.Threading.Tasks
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Data;
+using Avalonia.Input;
+using Avalonia.Interactivity;
+using Avalonia.Layout;
+using Avalonia.Markup.Xaml;
+using Avalonia.Media;
+using Avalonia.Styling;
+using Avalonia.Themes.Fluent;
+using System.ComponentModel;
+using System.Threading.Tasks;
 
 // You can build a user interface with C# as easily as with XAML, with a few extension methods
 // such as AddChildren and AddItems, which we have defined below. (The same trick works with WPF.)
@@ -64,8 +63,13 @@ void Main()
 	chkDark.Click += (sender, args) =>
 		Application.Current.RequestedThemeVariant = chkDark.IsChecked == true ? ThemeVariant.Dark : ThemeVariant.Light;
 
+#if MACOS
+	Application.Current.Run (new Window { Content = tabControl, Topmost = true });
+	Environment.Exit (0);
+#else
 	tabControl.Dump();
-	
+#endif
+
 	// This trick of using C# instead of XAML works equally well in Visual Studio, and is how LINQPad's AI user interface
 	// was written (using WPF as the backend). C# is much better than XAML at enabling code reuse and avoiding repetition.
 	// No more resource dictionaries, markup extensions and their restrictions: just use variables & methods!
@@ -73,8 +77,8 @@ void Main()
 	// You can still separate your UI from your model and use MVVM - separation doesn't require different languages.
 }
 
-// Tip: to avoid defining OnInit and AvaloniaExtensions in every query, save this script to My Queries and then
-// use the #load directive to import it into other queries (e.g.: #load "Avalonia").
+// Tip: to avoid defining OnInit and AvaloniaExtensions in every script, save this script to My Queries and then
+// use the #load directive to import it into other scripts (e.g.: #load "Avalonia").
 
 void OnInit()    // Initialize Avalonia subsystem
 {

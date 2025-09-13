@@ -1,6 +1,6 @@
 // LINQPad Program
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // With yield return, you can write an iterator; with await, you can write an asynchronous function.
 // Asynchronous streams (from C# 8) combine these concepts and let you write an iterator that awaits,

@@ -19,9 +19,9 @@ select new
 }
 
 /*	To query your own databases, click 'Add connection' (on the TreeView to the left),
-	then select the desired database in the query's "Connection" combo (above).
+	then select the desired database in the script's "Connection" combo (above).
 	
 	LINQPad will then magically generate a typed data context behind the scenes.
 
-	Database and connection details are saved with each query, so next time you
-	open the query, the schema tree on the left will conveniently reappear.       */
+	Database and connection details are saved with each script, so next time you
+	open the script, the schema tree on the left will conveniently reappear.       */

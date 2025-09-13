@@ -3,7 +3,7 @@
 </Query>
 
 // Sometimes it's useful to apply custom format strings when dumping numeric and date/time types,
-// LINQPad lets you specify global defaults in Edit | Preferences > Formatting.
+// LINQPad lets you specify global defaults in Settings > Formatting.
 // You can also provide format strings with each call to Dump:
 DateTime.Now.Dump (new DumpOptions { FormatStrings = new DumpFormatStrings { DateTime = "yyyy-MM-dd" }});
 

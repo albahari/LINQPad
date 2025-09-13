@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // The Dump extension method is like Console.WriteLine, but much more powerful.
 

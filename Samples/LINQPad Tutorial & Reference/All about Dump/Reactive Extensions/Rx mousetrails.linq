@@ -13,7 +13,7 @@
   <Namespace>System.Windows.Threading</Namespace>
 </Query>
 
-// This example uses WPF. Move the mouse through the results window after running the query.
+// This example uses WPF. Move the mouse through the results window after running the script.
 
 void Main()
 {

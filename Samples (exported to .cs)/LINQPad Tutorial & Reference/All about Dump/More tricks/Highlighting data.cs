@@ -8,7 +8,7 @@ Util.Highlight ("Hello").Dump();
 
 Util.HighlightIf (2 > 1, "2 is greater than 1").Dump();
 
-// Util.HighlightIf makes it easy to selectively highlight data in queries.
+// Util.HighlightIf makes it easy to selectively highlight data.
 // The following query lists the files in the LINQPad folder, highlighting the executables:
 
 var files =

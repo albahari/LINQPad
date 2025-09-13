@@ -2,12 +2,12 @@
 
 #r: "nuget: System.Reactive"
 
-using System.Drawing
-using System.Drawing.Drawing2D
-using System.Drawing.Text
-using System.Reactive
-using System.Reactive.Linq
-using System.Windows.Forms
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
+using System.Reactive;
+using System.Reactive.Linq;
+using System.Windows.Forms;
 
 // This sample, by Erik Meijer, displays a pad that you can draw on - with Rx!
 // This works in LINQPad because you can dump any Windows Forms or WPF control, and it will render.

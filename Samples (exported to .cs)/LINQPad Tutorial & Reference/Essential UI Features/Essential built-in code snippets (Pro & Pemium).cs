@@ -1,8 +1,8 @@
 // LINQPad Statements
 
-/* LINQPad Pro/Premium ship with a useful set of built-in code snippets. To get a full list, press Ctrl+K, X
+/* LINQPad Pro/Premium ship with a useful set of built-in code snippets. To get a full list, press Ctrl+KX / Command-KX
 
-You can also define your own - see query://../Customization_&_Extensibility/Custom_code_snippets_(Developer_&_Premium)
+You can also define your own - see script://../Customization_and_Extensibility/Custom_code_snippets_(Developer_&_Premium)
 
 Here are the 9 most useful C# snippets that are unique to LINQPad. Give them a try!
 

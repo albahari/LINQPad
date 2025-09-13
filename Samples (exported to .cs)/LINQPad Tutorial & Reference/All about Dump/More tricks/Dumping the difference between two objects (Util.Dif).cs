@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // You can display the difference between two objects with Util.Dif:
 

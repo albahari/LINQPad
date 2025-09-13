@@ -24,6 +24,6 @@ files.Dump();
 Util.WithStyle ("test", "font-size:30pt").Dump();
 
 // For more ways to customize Dump, see
-// query://../../Customization_&_Extensibility/Customizing_results_-_colors_and_fonts
+// script://../../Customization_and_Extensibility/Customizing_results_-_colors_and_fonts
 
-// For syntax highlighting, see query://../Cool_things_you_can_Dump/Syntax_highlighting
+// For syntax highlighting, see script://../Cool_things_you_can_Dump/Syntax_highlighting

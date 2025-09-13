@@ -4,10 +4,10 @@
 
 This works whether you're querying SQL Server, Oracle, Postgres, MySQL or SQLite.
 
-When you set the query language to SQL, the Schema Explorer TreeView automatically updates to give 
+When you set the script language to SQL, the Schema Explorer TreeView automatically updates to give
 you a SQL-centric (rather than LINQ-centric) view of the database.
 
-TIP: You can make SQL the default language in Edit | Preferences | Query.
+TIP: You can make SQL the default language in Settings.
 TIP: LINQPad supports the 'GO' keyword for issuing queries in separate batches.
 
 */

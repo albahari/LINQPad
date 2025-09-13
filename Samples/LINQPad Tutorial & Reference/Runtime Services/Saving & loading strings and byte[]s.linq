@@ -2,7 +2,7 @@
 
 // You can easily save/load strings and byte arrays into named slots.
 //
-// Slots are shared between all queries and are stored in %APPDATA%.
+// Slots are shared between all scripts and are stored in %APPDATA%.
 
 Util.SaveString ("LINQPad.DemoString", "Foo");
 Util.LoadString ("LINQPad.DemoString").Dump();

@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Spreadsheet
+using LINQPad.Spreadsheet;
 
 // LINQPad's API also supports multi-sheet documents:
 

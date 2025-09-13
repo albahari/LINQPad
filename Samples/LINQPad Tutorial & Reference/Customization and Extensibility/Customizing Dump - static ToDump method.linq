@@ -1,6 +1,6 @@
-// LINQPad Program
+<Query Kind="Program" />
 
-// You can also define a static ToDump method in queries of type "C# Program".
+// You can also define a static ToDump method in scripts of type "C# Program".
 // The static ToDump method fires on every call to Dump.
 
 void Main()
@@ -27,5 +27,5 @@ static object ToDump (object input)
 	return input;
 }
 
-// Tip: if you define a static ToDump method in the "My Extensions" query, it will fire for all queries.
-// For info on My Extensions, see query://../References_&_Namespaces/My_Extensions
+// Tip: if you define a static ToDump method in the "My Extensions" script, it will fire for all scripts.
+// For info on My Extensions, see script://../References_&_Namespaces/My_Extensions

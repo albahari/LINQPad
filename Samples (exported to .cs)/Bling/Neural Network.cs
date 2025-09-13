@@ -2,17 +2,18 @@
 
 #LINQPad optimize+
 
-using System.IO.Compression
-using System.Net
-using System.Runtime.InteropServices
-using System.Threading.Tasks
-using System.Windows
-using System.Windows.Controls
-using System.Windows.Forms.Integration
-using System.Windows.Media
-using System.Windows.Media.Imaging
-using System.Windows.Shapes
-using System.Windows.Threading
+using System.IO.Compression;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Forms.Integration;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.Net.Http;
 
 // This query downloads a public dataset containing 50,000 scanned images of handwritten digits, and then
 // uses that data to train a neural network that recognizes your handwriting. You can test it by drawing a
@@ -164,7 +165,7 @@ class FiringNet
 	{
 		Net = net;
 		Neurons = Net.Neurons.Select (layer => layer.Select (n => new FiringNeuron (n)).ToArray()).ToArray();
-		NeuronsWithLayersReversed = Neurons.Reverse().ToArray();
+		NeuronsWithLayersReversed = Neurons.AsEnumerable().Reverse().ToArray();
 	}
 
 	public void FeedForward (double[] inputValues)
@@ -469,7 +470,7 @@ class ImageSample : Sample
 			Console.Write ($"Downloading {filename}... ");
 
 			var buffer = new byte [0x10000];
-			using (var ms = new MemoryStream (new WebClient().DownloadData (uri)))
+			using (var ms = new MemoryStream (new HttpClient().GetByteArrayAsync (uri).Result))
 			using (var inStream = new GZipStream (ms, CompressionMode.Decompress))
 			using (var outStream = File.Create (fullPath))
 				while (true)

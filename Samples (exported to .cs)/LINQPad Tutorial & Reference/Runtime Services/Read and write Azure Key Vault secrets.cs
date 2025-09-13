@@ -3,11 +3,11 @@
 #r: "nuget: Azure.Identity"
 #r: "nuget: Azure.Security.KeyVault.Secrets"
 
-using Azure
-using Azure.Core
-using Azure.Identity
-using Azure.Security.KeyVault.Secrets
-using System.Threading.Tasks
+using Azure;
+using Azure.Core;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using System.Threading.Tasks;
 
 // This script demonstrates how to access the Azure Vault API using LINQPad's authentication helper.
 

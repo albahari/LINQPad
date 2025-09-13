@@ -13,4 +13,4 @@ isLower ("test").Dump();
 
 // This feature is useful with libraries such as ASP.NET Minimal API.
 
-// See also query://../What's_new_in_C#_10/Lambda_expressions/var_with_lambdas
+// See also script://../What's_new_in_C#_10/Lambda_expressions/var_with_lambdas

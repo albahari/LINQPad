@@ -11,4 +11,4 @@ string[] words = "the quick brown fox".Split();
 Util.WithStyle (words, "color:red").Dump ("with style!");
 
 // If you want to interact with the HTML after dumping it, see
-// query://../../LINQPad_Controls
+// script://../../LINQPad_Controls

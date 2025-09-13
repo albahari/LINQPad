@@ -2,8 +2,8 @@
 
 #r: "nuget: System.Reactive"
 
-using System.Reactive
-using System.Reactive.Linq
+using System.Reactive;
+using System.Reactive.Linq;
 
 // LINQPad has special support for dumping Reactive Extensions observables.
 //

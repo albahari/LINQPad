@@ -15,7 +15,7 @@
 
 // The following are predefined by LINQPad:
 
-#if CMD                          // true if the query is running from the command-line (LPRun.exe)
+#if CMD                          // true if the script is running from the command-line (LPRun.exe)
 	"Command-line".Dump();
 #endif
 
@@ -41,11 +41,23 @@
 	"You're on .NET 8 or later".Dump();
 #endif
 
+#if NET9
+	"You're on .NET 9 or later".Dump();
+#endif
+
 // If you enjoy typing, you can also use the Visual Studio-compatible symbols:
-#if NET8_0_OR_GREATER
-	"You're on .NET 8 or later".Dump();
+#if NET9_0_OR_GREATER
+	"You're on .NET 9 or later".Dump();
 #endif
 
 #if LINQPAD
-	"LINQPad".Dump();            // True if running on LINQPad
+	"This code is running under LINQPad".Dump();            // True if running on LINQPad
+#endif
+
+#if MACOS
+	"You have a nice quiet machine.".Dump();
+#endif
+
+#if WINDOWS
+	"You can run the full Visual Studio".Dump();
 #endif

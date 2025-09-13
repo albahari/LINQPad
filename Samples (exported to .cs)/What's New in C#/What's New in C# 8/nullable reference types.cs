@@ -10,7 +10,7 @@
 // in the form of warnings when it detects code that’s at risk of generating a NullReferenceException.
 //
 // The following directive enables nullable reference types (in LINQPad, you can also set a global
-// default in Edit | Preferences > Query).
+// default in Settings).
 
 
 void Main()

@@ -3,7 +3,8 @@
 </Query>
 
 // LINQPad is fine with multi-threaded code. Unlike with console apps, worker threads keep on running after
-// the main thread has completed. If you want to stop everything, press Ctrl+Shift+F5 to kill the process.
+// the main thread has completed. If you want to stop everything, press Ctrl+Shift+F5 / Shift-Command-F5
+// to kill the process.
 
 for (int i = 0; i < 5; i++)
 	new Thread (Foo) { Name = "Worker " + i }.Start();

@@ -6,7 +6,8 @@
      1. The password will be stored in plain text
      2. Changing the password will potentially require updating multiple scripts
    
-   The good news is that LINQPad includes a password manager that securely saves passwords via the Windows Data Protection API.
+   The good news is that LINQPad includes a password manager that securely saves passwords using
+   the Windows Data Protection API or macOS KeyChain.
    
    To request a password from code, call Util.GetPassword:   */
 

@@ -11,10 +11,10 @@ void Main()
 }
 
 // In this demo, the Init() method will run once, before the Main method prints "Test".
-// If you re-run the query, it won't run again because the assembly will already be loaded.
+// If you re-run the script, it won't run again because the assembly will already be loaded.
 
 [System.Runtime.CompilerServices.ModuleInitializer]
 internal static void Init()
 {
-	$"Module initializer for query {Assembly.GetExecutingAssembly().GetName()}".Dump(); 	
+	$"Module initializer for script {Assembly.GetExecutingAssembly().GetName()}".Dump(); 	
 }

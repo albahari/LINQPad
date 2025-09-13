@@ -24,6 +24,7 @@
   <Namespace>System.Windows.Media.Imaging</Namespace>
   <Namespace>System.Windows.Shapes</Namespace>
   <Namespace>System.Windows.Threading</Namespace>
+  <Namespace>System.Net.Http</Namespace>
   <DisableMyExtensions>true</DisableMyExtensions>
 </Query>
 
@@ -177,7 +178,7 @@ class FiringNet
 	{
 		Net = net;
 		Neurons = Net.Neurons.Select (layer => layer.Select (n => new FiringNeuron (n)).ToArray()).ToArray();
-		NeuronsWithLayersReversed = Neurons.Reverse().ToArray();
+		NeuronsWithLayersReversed = Neurons.AsEnumerable().Reverse().ToArray();
 	}
 
 	public void FeedForward (double[] inputValues)
@@ -482,7 +483,7 @@ class ImageSample : Sample
 			Console.Write ($"Downloading {filename}... ");
 
 			var buffer = new byte [0x10000];
-			using (var ms = new MemoryStream (new WebClient().DownloadData (uri)))
+			using (var ms = new MemoryStream (new HttpClient().GetByteArrayAsync (uri).Result))
 			using (var inStream = new GZipStream (ms, CompressionMode.Decompress))
 			using (var outStream = File.Create (fullPath))
 				while (true)

@@ -2,4 +2,4 @@
   <Namespace>System.Globalization</Namespace>
 </Query>
 
-// See query://../All_about_Dump/Basics
+// See script://../All_about_Dump/Basics

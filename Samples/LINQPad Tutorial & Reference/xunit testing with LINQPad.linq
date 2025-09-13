@@ -2,15 +2,15 @@
   <Namespace>Xunit</Namespace>
 </Query>
 
-// To use LINQPad with xunit, select the option on the Query menu: 'Add xunit test support'.
-// This adds a '#load "xunit"' directive to your query and imports the Xunit namespace.
+// To use LINQPad with xunit, select the option on the Script menu: 'Add xunit test support'.
+// This adds a '#load "xunit"' directive to your script and imports the Xunit namespace.
 //
 // You can then call RunTests() to initiate testing.
 //
 // Note that 'xunit.linq' file is created automatically on first use.
-// You can edit this query to customize test behavior as required.
+// You can edit this script to customize test behavior as required.
 
-#load "xunit"   // Ctrl+Click on "xunit" to open/edit the xunit query.
+#load "xunit"   // Ctrl+Click on "xunit" to open/edit the xunit script.
 
 void Main()
 {

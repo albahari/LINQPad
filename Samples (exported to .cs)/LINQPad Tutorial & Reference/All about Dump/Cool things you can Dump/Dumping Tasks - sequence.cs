@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // Here's a more elaborate example of dumping a sequence of 10 tasks:
 Enumerable.Range (1, 10).Select (i => Foo (i * 100, i)).Dump();

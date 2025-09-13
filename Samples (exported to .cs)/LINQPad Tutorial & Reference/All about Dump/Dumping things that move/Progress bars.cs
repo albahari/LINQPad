@@ -21,4 +21,4 @@ for (int i = 0; i <= 100; i++)
 }
 
 // LINQPad also provides HTML controls that you can dump inline.
-// See query://../../LINQPad_Controls
+// See script://../../LINQPad_Controls

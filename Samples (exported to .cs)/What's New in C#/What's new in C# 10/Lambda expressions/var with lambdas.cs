@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // Lambda expressions now support implicit typing, so can be used in var expressions:
 var action = () => {};

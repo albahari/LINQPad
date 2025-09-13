@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // The Util.CacheAsync method is optimized for asynchronous data (i.e., tasks).
 // It's exactly like Util.Cache except that it includes additional logic to 

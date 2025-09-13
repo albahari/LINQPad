@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Runtime.CompilerServices
+using System.Runtime.CompilerServices;
 
 // When compiling methods, C# emits a flag that instructs the runtime to initialize local variables
 // to their default 'zero' values (by clearing the memory).

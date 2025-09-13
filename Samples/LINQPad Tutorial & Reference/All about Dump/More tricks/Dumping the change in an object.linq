@@ -6,7 +6,6 @@
   <Reference>&lt;RuntimeDirectory&gt;\System.Deployment.dll</Reference>
   <Reference>&lt;RuntimeDirectory&gt;\System.Runtime.Serialization.Formatters.Soap.dll</Reference>
   <Namespace>System.Globalization</Namespace>
-  <Namespace>System.Windows.Forms</Namespace>
 </Query>
 
 // There's also a Util.Snapshot method to 'snapshot' an object so you can later compare it with itself.

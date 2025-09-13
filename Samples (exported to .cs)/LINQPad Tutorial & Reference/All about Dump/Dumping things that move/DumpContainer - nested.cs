@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // You can dump many DumpContainers at a time.
 // You can nest them in other objects - even in other DumpContainers.

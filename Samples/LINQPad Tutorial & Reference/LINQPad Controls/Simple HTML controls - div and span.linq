@@ -23,6 +23,6 @@ new Div (span1, span2).Dump();
 
 for (int i = 3; i < 100; i++)
 {
-	span2.Styles["font-size"] = i + "pt";   // See query://Styling_controls_(css)
+	span2.Styles["font-size"] = i + "pt";   // See script://Styling_controls_(css)
 	Thread.Sleep (20);
 }

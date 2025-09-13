@@ -16,4 +16,4 @@ for (int i = 0; i < 100000; i++)
 // This feature is handy if you need to emit a script for a custom control: if multiple instances
 // of that control are dumped, you only want to the script to appear once.
 
-Util.InvokeScript (false, "foo", "test");   // Just one foo has been defined!
+Util.JS.RunFunction ("foo", "test");   // Just one foo has been defined!

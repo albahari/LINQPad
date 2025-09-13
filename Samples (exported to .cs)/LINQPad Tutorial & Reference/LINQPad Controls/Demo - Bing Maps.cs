@@ -1,8 +1,8 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Net
-using System.Threading.Tasks
+using LINQPad.Controls;
+using System.Net;
+using System.Threading.Tasks;
 
 // This demonstrates how to use Bing Maps, as well as JavaScript interop and custom event handling.
 // NB: The Bing Maps API is in the process of being retired. See the 'Google Maps' demo for an alternative.
@@ -11,7 +11,7 @@ bool haveMapsAPIKey = false;   // Change this to true if you have an Bing Maps A
 
 if (Util.BrowserEngine.IsMSIE) 
 	throw new InvalidOperationException ("This functionality is not supported in IE. " +
-	"Please enable the Chromium browser in Edit | Preferences > Results");
+	"Please enable the Chromium browser in Settings > Results");
 
 // If we have an API key, prompt for it on first use (and then store it securely):
 string apiKey = haveMapsAPIKey ? Util.GetPassword ("Bing Maps API key") : "";
@@ -62,4 +62,4 @@ divMap.HtmlElement.AddEventListener ("rightClick",
 
 // Finally, load the Bing Maps script with an instruction to invoke our GetMap JavaScript function when ready.
 // (We do this last to ensure that the divMap element and the GetMap function exist.)
-Util.HtmlHead.AddScriptFromUri ($"http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key={apiKey}'");
+Util.HtmlHead.AddScriptFromUri ($"https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key={apiKey}'");

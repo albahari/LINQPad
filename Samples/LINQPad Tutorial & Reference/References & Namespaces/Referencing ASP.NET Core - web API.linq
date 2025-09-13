@@ -25,7 +25,7 @@
   <IncludeAspNet>true</IncludeAspNet>
 </Query>
 
-// The following query demonstrates how to run a web API application using ASP.NET minimal API.
+// The following script demonstrates how to run a web API application using ASP.NET minimal API.
 // In this case, we're exposing and endpoint that queries data from a SQLite demo database..
 
 // As with the previous sample, you don't need any NuGet packages when using ASP.NET.

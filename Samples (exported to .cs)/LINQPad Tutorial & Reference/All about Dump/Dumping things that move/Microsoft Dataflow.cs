@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
-using System.Threading.Tasks.Dataflow
+using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 // LINQPad has built-in support for Microsoft Dataflow blocks.
 //

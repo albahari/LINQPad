@@ -19,4 +19,4 @@ new { x, y }.Dump();
 // Should you declare your own type called 'nint' or 'nuint', your type wins and the new keywords are masked.
 
 // NB: nint and nuint have been updated in C# 11.
-//     See query://../../What's_new_in_C#_11/Native-sized_integers_-_recap.linq
+//     See script://../../What's_new_in_C#_11/Native-sized_integers_-_recap.linq

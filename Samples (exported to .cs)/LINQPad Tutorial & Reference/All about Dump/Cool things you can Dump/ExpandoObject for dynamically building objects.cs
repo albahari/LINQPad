@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Dynamic
+using System.Dynamic;
 
 // You can use an ExpandoObject to build objects dynamically.
 // For instance, suppose you want to dynamically create an object with 10 properties.

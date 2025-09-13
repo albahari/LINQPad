@@ -14,7 +14,7 @@
 // You can reference the ASP.NET Core Framework (if installed) - just press F4 and tick
 // the checkbox on the bottom right.
 
-// The following query demonstrates how easy it is to host web pages using ASP.NET minimal API.
+// The following script demonstrates how easy it is to host web pages using ASP.NET minimal API.
 
 var app = WebApplication.CreateBuilder().Build();
 app.MapGet ("/", () => "Hello from LINQPad!");

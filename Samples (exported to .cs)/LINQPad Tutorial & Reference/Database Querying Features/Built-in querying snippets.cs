@@ -1,6 +1,6 @@
 // LINQPad Expression
 
-/* LINQPad includes around a dozen built-in query snippets.
+/* LINQPad includes around a dozen built-in snippets.
 
 Right-click a table or queryable object in Schema Explorer to see them.
 

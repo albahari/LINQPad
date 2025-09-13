@@ -2,17 +2,17 @@
 
 #r: "nuget: Microsoft.CodeAnalysis.CSharp"
 
-using Microsoft.CodeAnalysis
-using Microsoft.CodeAnalysis.CSharp
-using Microsoft.CodeAnalysis.CSharp.Syntax
-using Microsoft.CodeAnalysis.Text
-using Microsoft.CodeAnalysis.Emit
-using System.Runtime.InteropServices
-using System.Runtime.Loader
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.Text;
+using Microsoft.CodeAnalysis.Emit;
+using System.Runtime.InteropServices;
+using System.Runtime.Loader;
 
 // Antivirus Performance Test
 //
-// This query generates a tiny (2KB) DLL and times how long it takes to load.
+// This script generates a tiny (2KB) DLL and times how long it takes to load.
 //
 // Normal results on a healthy computer:
 //    Windows:

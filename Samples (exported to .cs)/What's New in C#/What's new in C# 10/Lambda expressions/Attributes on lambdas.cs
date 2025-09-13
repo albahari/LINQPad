@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.ComponentModel
+using System.ComponentModel;
 
 // You can now apply attributes to lambdas:
 

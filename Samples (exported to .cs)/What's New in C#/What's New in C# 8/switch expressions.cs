@@ -1,7 +1,7 @@
 // LINQPad Program
 
-using System.Drawing
-using System.Windows.Forms
+using System.Drawing;
+using System.Windows.Forms;
 
 // An expression-based version of the switch statement is supported from C# 8
 

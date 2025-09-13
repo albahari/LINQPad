@@ -1,6 +1,6 @@
 // LINQPad Program
 
-using System.Diagnostics.CodeAnalysis
+using System.Diagnostics.CodeAnalysis;
 
 // NB: This demo requires .NET 7+   https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 //

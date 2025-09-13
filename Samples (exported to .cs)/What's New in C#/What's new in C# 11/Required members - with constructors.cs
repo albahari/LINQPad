@@ -1,6 +1,6 @@
 // LINQPad Program
 
-using System.Diagnostics.CodeAnalysis
+using System.Diagnostics.CodeAnalysis;
 
 // Should you also want to define constructors, you can apply the [SetsRequiredMembers] attribute
 // to inform the compiler that the constructor fully populates the required properties.

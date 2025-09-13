@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using System.Runtime.CompilerServices
-using System.Runtime.InteropServices
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 EnumWindows (&PrintWindow, (nuint)0);
 

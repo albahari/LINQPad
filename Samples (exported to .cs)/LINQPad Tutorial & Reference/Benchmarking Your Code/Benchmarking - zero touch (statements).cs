@@ -1,8 +1,8 @@
 // LINQPad Statements
 
-// With the query language set to "C# Statements", you can do basic benchmarking.
+// With the script language set to "C# Statements", you can do basic benchmarking.
 //
-// Select the following lines of code and press Ctrl+Shift+B to find out how long it takes to
+// Select the following lines of code and press Ctrl+Shift+B / Shift-Command-B to find out how long it takes to
 // call ToUpper on a string:
 
 string s1 = "The quick brown fox jumps over the lazy dog.";

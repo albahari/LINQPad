@@ -3,9 +3,9 @@
 #r: "nuget: Azure.Identity"
 #r: "nuget: Azure.ResourceManager.Resources"
 
-using Azure.Core
-using System.Threading.Tasks
-using Azure.ResourceManager
+using Azure.Core;
+using System.Threading.Tasks;
+using Azure.ResourceManager;
 
 // To use any of the Azure.* management libraries, you must authenticate by providing a TokenCredential
 // (Azure.Core.TokenCredential in Azure.Identity.dll).
@@ -50,8 +50,8 @@ void Main()
 }
 /* TIP:
 
-Save this script to "My Queries" - give it a name such as "Azure Credentials".
-Then whenever you need to authenticate to Azure, put the following directive into your query:
+Save this script to "My Scripts" - give it a name such as "Azure Credentials".
+Then whenever you need to authenticate to Azure, put the following directive into your script:
 
 #load "Azure Credentials"	
 

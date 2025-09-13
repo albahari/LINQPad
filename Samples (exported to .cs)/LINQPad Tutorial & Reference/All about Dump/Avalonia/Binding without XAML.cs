@@ -4,20 +4,19 @@
 #r: "nuget: Avalonia.Themes.Fluent"
 #r: "nuget: Avalonia.Win32.Interoperability"
 
-using Avalonia
-using Avalonia.Controls
-using Avalonia.Controls.ApplicationLifetimes
-using Avalonia.Data
-using Avalonia.Input
-using Avalonia.Interactivity
-using Avalonia.Layout
-using Avalonia.Markup.Xaml
-using Avalonia.Media
-using Avalonia.Styling
-using Avalonia.Themes.Fluent
-using Avalonia.Win32.Interoperability
-using System.ComponentModel
-using System.Threading.Tasks
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Data;
+using Avalonia.Input;
+using Avalonia.Interactivity;
+using Avalonia.Layout;
+using Avalonia.Markup.Xaml;
+using Avalonia.Media;
+using Avalonia.Styling;
+using Avalonia.Themes.Fluent;
+using System.ComponentModel;
+using System.Threading.Tasks;
 
 // Here's the same example implemented with data binding, using Avalonia's special binding syntax.
 // (In WPF, you can achieve a similar result by writing a fluent SetBinding extension method.)
@@ -67,7 +66,12 @@ void Main()
 		}
 	);
 
+#if MACOS
+	Application.Current.Run (new Window { Content = tabControl, Topmost = true });
+	Environment.Exit (0);
+#else
 	tabControl.Dump();
+#endif
 }
 
 void OnInit()    // Initialize Avalonia subsystem

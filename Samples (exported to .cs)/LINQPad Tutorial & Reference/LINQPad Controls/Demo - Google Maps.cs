@@ -1,8 +1,8 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Net
-using System.Threading.Tasks
+using LINQPad.Controls;
+using System.Net;
+using System.Threading.Tasks;
 
 // This demonstrates how to use Google Maps, as well as JavaScript interop and custom event handling.
 //
@@ -11,7 +11,7 @@ using System.Threading.Tasks
 
 if (Util.BrowserEngine.IsMSIE) 
 	throw new InvalidOperationException ("This functionality is not supported in IE. " +
-	"Please enable the Chromium browser in Edit | Preferences > Results");
+	"Please enable the Chromium browser in Settings > Results");
 
 // Prompt for the API key on first use (and then store it securely):
 string apiKey = Util.GetPassword ("Google Maps API key");

@@ -4,14 +4,14 @@
 #r: "nuget: Azure.ResourceManager.Resources"
 #r: "nuget: Azure.ResourceManager.Sql"
 
-using Azure
-using Azure.Core
-using Azure.Identity
-using Azure.ResourceManager
-using Azure.ResourceManager.Resources
-using Azure.ResourceManager.Sql
-using System.Threading.Tasks
-using System.Net.Http
+using Azure;
+using Azure.Core;
+using Azure.Identity;
+using Azure.ResourceManager;
+using Azure.ResourceManager.Resources;
+using Azure.ResourceManager.Sql;
+using System.Threading.Tasks;
+using System.Net.Http;
 
 // This script demonstrates how to add the current IP address to the firewall of an Azure SQL Server database,
 // using the Azure.ResourceManager API. No passwords are stored or handled because we authenticate interactively.

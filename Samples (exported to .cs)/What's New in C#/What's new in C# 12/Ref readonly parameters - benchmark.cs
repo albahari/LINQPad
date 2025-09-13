@@ -2,9 +2,9 @@
 
 #load "BenchmarkDotNet"
 
-using System.Globalization
-using BenchmarkDotNet.Attributes
-using System.Runtime.CompilerServices
+using System.Globalization;
+using BenchmarkDotNet.Attributes;
+using System.Runtime.CompilerServices;
 
 // This shows the performance difference between passing a 48-byte struct by value vs reference.
 // Passing by reference is about twice as fast - which sounds like a lot - but amounts to only

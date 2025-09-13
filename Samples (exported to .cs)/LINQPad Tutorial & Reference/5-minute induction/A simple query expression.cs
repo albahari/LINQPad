@@ -10,4 +10,4 @@ select word
 // Feel free to edit this... (no-one's watching!)
 // The inbuilt samples cannot be overwritten.
 //
-// Tip:  You can execute part of a query by highlighting it, and then pressing F5.
+// Tip:  You can execute part of a script by highlighting it, and then pressing F5.

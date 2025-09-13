@@ -7,4 +7,4 @@
 new StringBuilder ("test").Dump (includePrivate:true);
 
 // To access private fields and properties programmatically, call the Uncapsulate() extension method:
-// query://../../Fluent_Reflection_With_Uncapsulate()
+// script://../../Fluent_Reflection_With_Uncapsulate()

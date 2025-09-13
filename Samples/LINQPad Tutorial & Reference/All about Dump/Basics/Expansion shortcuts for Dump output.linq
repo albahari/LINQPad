@@ -5,10 +5,10 @@
 /* When dumping complex objects, it can be useful to instantly expand/collapse to n levels.
 
 On the toolbar just above the results, there's a 'Format' dropdown on the right. 
-Try running this query, then press:
-	Alt+1 - to collapse to 1 level
-	Alt+2 - to collapse to 2 levels
-	Alt+3 - to collapse to 3 levels    */
+Try running this script, then press:
+	Alt+1 - to collapse to 1 level     (Control-Command-1 on macOS)
+	Alt+2 - to collapse to 2 levels    (Control-Command-2 on macOS)
+	Alt+3 - to collapse to 3 levels    (Control-Command-3 on macOS)  */
 
 CultureInfo.CurrentCulture.DateTimeFormat.Dump();
 

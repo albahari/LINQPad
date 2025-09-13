@@ -5,11 +5,11 @@
 #r: "nuget: Microsoft.Office.Interop.PowerPoint"
 #r: "nuget: Microsoft.Office.Interop.Word"
 
-using Excel = Microsoft.Office.Interop.Excel
-using LINQPad.Spreadsheet
-using Outlook = Microsoft.Office.Interop.Outlook
-using PowerPoint = Microsoft.Office.Interop.PowerPoint
-using Word = Microsoft.Office.Interop.Word
+using Excel = Microsoft.Office.Interop.Excel;
+using LINQPad.Spreadsheet;
+using Outlook = Microsoft.Office.Interop.Outlook;
+using PowerPoint = Microsoft.Office.Interop.PowerPoint;
+using Word = Microsoft.Office.Interop.Word;
 
 // After saving a file, you can interact with it using the COM API.
 // (Press F4 and click "Add Office Interop" to reference the Office Interop libraries.)

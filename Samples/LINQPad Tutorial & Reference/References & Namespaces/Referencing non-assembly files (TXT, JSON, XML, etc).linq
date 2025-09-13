@@ -13,5 +13,5 @@ string demoFilePath = Path.Combine (AppContext.BaseDirectory, "DemoFile.txt");
 File.ReadAllText (demoFilePath).Dump ("Demo file.txt");
 
 // The LINQPad GUI also lets you take the following shortcut, because it synchronizes
-// the current directory with AppContext.BaseDirectory (see preceding query):
+// the current directory with AppContext.BaseDirectory (see preceding script):
 File.ReadAllText ("DemoFile.txt").Dump ("Demo file.txt");

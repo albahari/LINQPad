@@ -11,7 +11,7 @@
 
 if (Util.BrowserEngine.IsMSIE) 
 	throw new InvalidOperationException ("This functionality is not supported in IE. " +
-	"Please enable the Chromium browser in Edit | Preferences > Results");
+	"Please enable the Chromium browser in Settings > Results");
 
 // Prompt for the API key on first use (and then store it securely):
 string apiKey = Util.GetPassword ("Google Maps API key");

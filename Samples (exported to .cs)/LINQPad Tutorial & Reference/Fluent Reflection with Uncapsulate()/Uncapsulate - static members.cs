@@ -12,7 +12,7 @@ Uncapsulate ("Demo+NestedPrivate")._privateField.Dump();
 // If the containing class is accessible, you can also do this:
 Uncapsulate<Demo>().NestedPrivate._privateField.Dump();
 
-// The class can live anywhere in the assemblies that your query references - including the .NET Core assemblies.
+// The class can live anywhere in the assemblies that your script references - including the .NET Core assemblies.
 // Don't forget to prefix the type with its namespace:
 StringBuilder cachedStringBuilder = Uncapsulate ("System.Text.StringBuilderCache").Acquire();
 

@@ -2,8 +2,8 @@
 
 #r: "nuget: System.Reactive"
 
-using System.Reactive
-using System.Reactive.Linq
+using System.Reactive;
+using System.Reactive.Linq;
 
 // Another way to dump streams side-by-side is to use the Util.HorizontalRun method:
 

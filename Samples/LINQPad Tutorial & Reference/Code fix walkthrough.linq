@@ -4,7 +4,7 @@
 
 void Main()
 {
-	// 1. Move the cursor to the line below and press Alt+Enter to generate SomeNewMethod.		
+	// 1. Move the cursor to the line below and press Alt+Enter (Option-Return on macOS) to generate SomeNewMethod.		
 	SomeNewMethod ("foo", 123, true);
 	
 	// 2. Press Alt+Enter again to generate a constructor for Foo.

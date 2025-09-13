@@ -4,10 +4,10 @@
 
 #r: "nuget: BenchmarkDotNet"
 
-using BenchmarkDotNet.Attributes
-using BenchmarkDotNet.Configs
-using BenchmarkDotNet.Running
-using System.Security.Cryptography
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Running;
+using System.Security.Cryptography;
 
 // To use BenchmarkDotNet directly, add a NuGet reference to BenchmarkDotNet.
 // Then you can use BenchmarkDotNet much as you would in Visual Studio.

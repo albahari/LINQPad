@@ -1,7 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
-using System.Windows.Forms
+using System.Globalization;
 
 // There's also a Util.Snapshot method to 'snapshot' an object so you can later compare it with itself.
 

@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // The Util.HtmlHead.AddScript method is a shortcut for doing this:
 

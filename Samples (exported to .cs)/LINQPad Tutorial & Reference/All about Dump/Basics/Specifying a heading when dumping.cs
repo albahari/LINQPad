@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // You can specify a heading when dumping by passing a string argument to Dump:
 

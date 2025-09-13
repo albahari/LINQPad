@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // Iterators and async methods can now use 'ref local' variables and include unsafe code,
 // as long they are not accessed across an 'await' or 'yield return' boundary.

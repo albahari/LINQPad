@@ -1,34 +1,28 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
-// The easiest way to execute JavaScript is to call Util.InvokeScript with 'eval':
-Util.InvokeScript (true, "eval", "1+1").Dump ("1 + 1");
+// The easiest way to execute JavaScript is to call Util.JS.Eval or Util.JS.Run:
+Util.JS.Eval ("1+1").Dump();
+Util.JS.Eval ("document.body.innerHTML").Dump();
 
-Util.InvokeScript (true, "eval", "document.body.innerHTML").Dump ("Document HTML");
+string script = """
+	var headings = document.getElementsByTagName ('h1');
+	
+	headings[0].style.color = 'red';
+	
+	headings.length;  // return the number of headings to the caller
+	""";
 
-Util.InvokeScript (true, "eval", @"
-    var headings = document.getElementsByTagName ('h1');
+Util.JS.Eval (script).Dump ("H1 count");
 
-    for (let h of headings)
-        h.style.color = 'red';
-
-    headings.length;  // return the number of headings to the caller").Dump ("H1 count");
+// Use Util.JS.Run if your expression has no return value (or if it has one but you don't need it):
+Util.JS.Run ("alert ('test')");
 
 // You can also add functions to the HTML <head>:
-Util.HtmlHead.AddScript ("function foo(x) { alert(x) }");
+Util.HtmlHead.AddScript ("function Square(x) { return x * x }");
 
 // and then call them as follows:
-Util.InvokeScript (false, "foo", "test");
+Util.JS.EvalFunction ("Square", 3).Dump();
 
-// The first argument (false) indicates that we don't need the return value. This can
-// speed up the call, as it doesn't have to wait for a return value.
-//
-// Note that you can call Util.HtmlHead.AddScript anytime (not just at the start of the script).
-
-// Let's call our 'foo' function from a button click:
-var button = new Button ("Click me").Dump();
-button.Click += (sender, args) => button.HtmlElement.InvokeScript (false, "foo", "button clicked");
-
-// button.HtmlElement.InvokeScript is the same as Util.InvokeScript, except that it delays
-// execution if the control in question hasn't yet been dumped.
+// (You can call Util.HtmlHead.AddScript anytime - not just at the start of the script.)

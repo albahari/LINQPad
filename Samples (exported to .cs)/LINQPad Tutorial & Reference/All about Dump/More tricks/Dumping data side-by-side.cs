@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // To display data side-by-side, use Util.HorizontalRun:
 

@@ -5,12 +5,12 @@
 // Another useful pattern is to call Environment.Exit to end the process programmatically after cleaning up.
 // This allows for cleanup without needing to monitor cancellation tokens.
 
-QueryCancelToken.Register (() =>
+ScriptCancelToken.Register (() =>
 {
 	// Perform cleanup:
 	"Cleanup".Dump();
 	
-	// Now we can end the query and process
+	// Now we can end the script's process
 	Environment.Exit(0);
 });
 

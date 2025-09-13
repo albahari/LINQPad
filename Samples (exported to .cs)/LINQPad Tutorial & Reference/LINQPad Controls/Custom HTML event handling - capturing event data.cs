@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Globalization
+using LINQPad.Controls;
+using System.Globalization;
 
 // You can capture JavaScript event data and return it to the C# event handler.
 
@@ -17,7 +17,7 @@ div.HtmlElement.AddEventListener (
 	new[] { "offsetX", "offsetY" },
 	(sender, args) => args.Properties.Dump ("Simple event properties"));
 
-// (Note that this returns event data only if you're using the Chromium browser engine.)
+// (Note that this does not return data if you've enabled the legacy IE rendering engine.)
 
 // The following captures all event properties, and is handy for exploration:
 // div.HtmlElement.AddEventListener ("mousedown", new[] { "*" }, (sender, args) => args.Properties.Dump ("All props"));
@@ -39,4 +39,4 @@ div.HtmlElement.AddEventListener (
 div.Dump();
 
 // You can also handle custom events that you define in JavaScript.
-// For an example, see query://Demo_-_Bing_Maps
+// For an example, see script://Demo_-_Bing_Maps

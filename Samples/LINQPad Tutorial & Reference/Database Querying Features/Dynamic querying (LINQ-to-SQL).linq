@@ -2,7 +2,7 @@
 
 // You can execute a SQL query into IEnumerable<dynamic> with LINQPad's ExecuteQueryDynamic method.
 //
-// (You will need a LINQ-to-SQL connection to make this query work).
+// (You will need a LINQ-to-SQL connection to make this script work).
 
 var results = ExecuteQueryDynamic ("select * from Customers where [Contact Name] like {0}", "%ann%").ToArray();
 results.Dump();    // results is IEnumerable<dynamic>

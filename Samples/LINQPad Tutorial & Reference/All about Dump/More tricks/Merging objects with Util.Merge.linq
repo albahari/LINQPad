@@ -12,3 +12,5 @@ Util.Merge (o1, o2).Dump();
 // You can also include simple values in the merge:
 
 Util.Merge (o1, o2, "testing").Dump();
+
+// This feature works in both Rich Text and Data Grid mode.

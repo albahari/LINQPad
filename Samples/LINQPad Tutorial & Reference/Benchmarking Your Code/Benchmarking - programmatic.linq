@@ -3,10 +3,10 @@
   <Namespace>System.Security.Cryptography</Namespace>
 </Query>
 
-// To use programmatic benchmarking, go to the Query meny and choose "Add Programmatic Benchmark support"
-// (you can try this with another query).
+// To use programmatic benchmarking, go to the Script menu and choose "Add Programmatic Benchmark support"
+// (you can try this with another script).
 //
-// This does a couple of things. First, it adds the following #load directive to your query:
+// This does a couple of things. First, it adds the following #load directive to your script:
 
 #load "BenchmarkDotNet"
 
@@ -43,7 +43,7 @@ public void BenchmarkSetup() => RandomNumberGenerator.Create().GetBytes (data);
 [Benchmark]
 public void TestSHA1() => sha1.ComputeHash (data);
 
-// You can still benchmark an individual method ("soloing") by highlighting it and pressing Ctrl+Shift+B.
+// You can still benchmark an individual method ("soloing") by highlighting it and pressing Ctrl+Shift+B / Shift-Command-B.
 // Any [GlobalSetup] methods that you've defined will still be honored.
 
 // You can also define classes containing [Benchmark] methods. Just make sure the classes are public.

@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-object x = new Uri ("http://www.linqpad.net");
+object x = new Uri ("https://www.linqpad.net");
 
 // In C# 10, property patterns can reference nested members:
 (x is Uri { Scheme.Length:4 }).Dump();
