@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Dynamic
+using System.Dynamic;
 
 // Util.ToExpando converts an existing object it an expando that you can then customize:
 

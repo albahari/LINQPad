@@ -1,5 +1,5 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
-// See query://../All_about_Dump/Basics
+// See script://../All_about_Dump/Basics

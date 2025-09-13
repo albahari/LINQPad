@@ -14,7 +14,7 @@ void Main()
 
 public static class MyExtensions
 {
-	// Move this method into the 'My Extensions' query to make it available to all queries.
+	// Move this method into the 'My Extensions' script to make it available to all scripts.
 	// Notice that we've added a reference to System.Windows.Forms.DataVisualization (press F4).
 	
 	public static void DumpPie (this IEnumerable<(string, double)> values, string title = null)

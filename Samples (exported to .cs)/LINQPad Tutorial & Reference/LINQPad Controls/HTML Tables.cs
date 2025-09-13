@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 var table = new Table (noBorders:true, cellVerticalAlign:"middle");
 

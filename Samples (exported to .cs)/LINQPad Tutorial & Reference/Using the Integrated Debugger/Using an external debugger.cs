@@ -4,7 +4,7 @@
 //
 // This is handy if you want to debug other assemblies. Note that you must ensure LINQPad's debugger is not
 // also attached. You can do this by clearing all breakpoints and unchecking the blue/red 'break on exception'
-// toolbar buttons above, OR by running the query with Ctrl+F5.
+// toolbar buttons above, OR by running the script with Ctrl+F5 / Command-F5.
 
 Debugger.Launch();
 

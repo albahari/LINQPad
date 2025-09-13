@@ -55,6 +55,6 @@ void Main1() => "Main1".Dump();    // Press Alt+Shift+1 to run this
 void Main2() => "Main2".Dump();    // Press Alt+Shift+2 to run this
 void Main3() => "Main3".Dump();    // Press Alt+Shift+3 to run this
 
-// Finally, 'C# Program' queries act as 'mini-libraries' when #load-ed from another script.
-// In particular, anything in the 'Main' method is treated as test code and ignored when the query is #load-ed,
-// and queries can define 'hook methods' for additional flexibility (see https://www.linqpad.net/LinqReference.aspx)
+// Finally, 'C# Program' scripts act as 'mini-libraries' when #load-ed from another script.
+// In particular, anything in the 'Main' method is treated as test code and ignored when the script is #load-ed,
+// and scripts can define 'hook methods' for additional flexibility (see https://www.linqpad.net/LinqReference.aspx)

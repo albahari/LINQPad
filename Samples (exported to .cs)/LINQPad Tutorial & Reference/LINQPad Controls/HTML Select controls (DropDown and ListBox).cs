@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 var yourChoice = new DumpContainer();
 string[] colors = { "Red", "Green", "Violet", "Blue", "Orange", "Yellow" };

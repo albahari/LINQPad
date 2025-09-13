@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Dynamic
+using System.Dynamic;
 
 // To export data to HTML, use Util.ToHtmlString:
 

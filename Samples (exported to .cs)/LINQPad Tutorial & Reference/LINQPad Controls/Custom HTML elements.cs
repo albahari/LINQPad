@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // You can dump any other HTML element as follows:
 var h1 = new Control ("h1", "This is a heading").Dump();
@@ -12,7 +12,7 @@ h1.Styles ["color"] = "red";
 h1.HtmlElement ["title"] = "My heading";
 
 // You can also attach custom event handlers with HtmlElement.AddEventListener and invoke
-// any JavaScript method with HtmlElement.InvokeMethod.
+// any JavaScript method with HtmlElement.RunMethod or HtmlElement.EvalMethod.
 
 // Instead of specifying content as a string, you can feed in child controls:
 var h2 = new Control ("h2", new Span ("This is "), new Control ("u", "flexible")).Dump();

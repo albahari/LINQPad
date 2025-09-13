@@ -5,7 +5,7 @@
 
 // The Image control offers the same functionality as Util.Image, but with interactivity.
 
-var img = new Image ("http://www.linqpad.net/images/LINQPad.png").Dump ("from URI");
+var img = new Image ("https://www.linqpad.net/images/LINQPad.png").Dump ("from URI");
 img.Click += (sender, args) => img.Width += 10;
 
 // You can also create an image from a filename, System.Drawing.Image, and byte array.

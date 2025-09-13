@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Runtime.CompilerServices
+using System.Runtime.CompilerServices;
 
 // A method parameter to which you apply the [CallerArgumentExpression] attribute "sucks up" the argument's source code:
 Print (Math.PI * 2);

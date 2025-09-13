@@ -8,7 +8,7 @@
 	- Click the "Export" menu on the results toolbar     (Excel, HTML, Word)
 	- Right-click a data grid (in Data Grid mode)        (Excel)
 	
-	You can try each option with the following query:
+	You can try each option with the following script:
 */
 
 bool enableDataGrids = false;   // You can alse the toolbar button to enable grids

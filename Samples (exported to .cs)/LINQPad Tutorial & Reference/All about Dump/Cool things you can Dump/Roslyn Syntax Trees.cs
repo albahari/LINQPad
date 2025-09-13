@@ -1,8 +1,8 @@
 // LINQPad Statements
 
-#r: "nuget: Microsoft.CodeAnalysis.CSharp"
+#r "nuget: Microsoft.CodeAnalysis.CSharp"
 
-using Microsoft.CodeAnalysis.CSharp
+using Microsoft.CodeAnalysis.CSharp;
 
 // If you're working with Roslyn assemblies (Microsoft.CodeAnalysis), you can visualize syntax trees
 // by calling .DumpSyntaxTree()

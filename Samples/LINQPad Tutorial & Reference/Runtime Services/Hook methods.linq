@@ -1,32 +1,33 @@
 <Query Kind="Program" />
 
-// LINQPad lets you write special "hook" methods that are called at various stages of query execution.
-// These can be particularly useful in queries that you #load - see https://www.linqpad.net/LinqReference.aspx
+// LINQPad lets you write special "hook" methods that are called at various stages of script execution.
+// These can be particularly useful in scripts that you #load - see https://www.linqpad.net/LinqReference.aspx
 
 void Main()
 {	
 	"Main method".Dump();
 }
 
-void OnInit()   // Eexecutes once when the process initializes (like a static constructor)
+void OnInit()   // Executes once when the process initializes (like a static constructor)
 {
-	// This will print the first time you run the query (and again, if you kill the process with Ctrl+Shift+F5).
-	"Query process initializing".Dump();
+	// This will print the first time you run the script
+	// (and again, if you kill the process with Ctrl+Shift+F5 / Shift-Command-F5).
+	"Script process initializing".Dump();
 }
 
-void OnStart()  // Executes just before the query is started
+void OnStart()  // Executes just before the script is started
 {
-	"Query starting".Dump();
+	"Script starting".Dump();
 }
 
-void OnFinish()  // Executes after the main thread finishes executing the query code.
+void OnFinish()  // Executes after the main thread finishes executing the script code.
 {
-	"Query finished".Dump();
+	"Script finished".Dump();
 }
 
 void Hijack()    // Runs instead of the Main method
 {
-	// Note that there can be only one Hijack method in (current query + all queries that you #load).
+	// Note that there can be only one Hijack method in (current script + all scripts that you #load).
 	"Hijack - start".Dump();
 	Main();
 	"Hijack - end".Dump();

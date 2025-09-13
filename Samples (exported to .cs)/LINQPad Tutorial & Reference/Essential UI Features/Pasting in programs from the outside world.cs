@@ -1,6 +1,6 @@
 // LINQPad Program
 
-// You can paste in just about any valid C# code (including namspaces) and it will run.
+// You can paste in just about any valid C# code (including namespaces) and it will run.
 // Just set the language to 'C# Program':
 
 namespace Foo    // Namespace is optional
@@ -14,6 +14,12 @@ namespace Foo    // Namespace is optional
 	}
 }
 
-// If you paste in 'using' directives, LINQPad will automatically move them to the Query Properties 
+// If you paste in 'using' directives, LINQPad will offer to move them to the Script Properties 
 // dialog (F4), to keep the editor free of clutter. For more info on how LINQPad handles 'using' 
-// directives, see query://../References_&_Namespaces/Adding_'using'_directives_(importing_namespaces).
+// directives, see script://../References_&_Namespaces/Adding_'using'_directives_(importing_namespaces).
+
+// You can also open and run .cs files directly, including file-based apps (introduced in C# 14).
+// LINQPad recognizes file-based app directives such as #:package and #:project to import packages
+// and reference .csproj files.
+
+// Use the '#if LINQPAD' directive if you want code to execute only under LINQPad.

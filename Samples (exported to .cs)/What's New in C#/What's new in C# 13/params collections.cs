@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Collections.Immutable
+using System.Collections.Immutable;
 
 // In C# 13, you can use the params modifier not just with arrays, but other collection types, too:
 

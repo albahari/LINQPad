@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Globalization
+using LINQPad.Controls;
+using System.Globalization;
 
 // You can also respond to JavaScript events that are not exposed in the control.
 

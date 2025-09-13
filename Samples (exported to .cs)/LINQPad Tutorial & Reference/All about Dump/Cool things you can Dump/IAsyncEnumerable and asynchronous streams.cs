@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // LINQPad lets you directly dump IAsyncEnumerables.
 
@@ -19,5 +19,3 @@ async IAsyncEnumerable<int> RangeAsync (int start, int count)
 	}
 }
 
-// You can also dump IAsyncEnumerables to Data Grids:
-// click the "Results to Data Grids" toolbar button, or call .Dump(true).

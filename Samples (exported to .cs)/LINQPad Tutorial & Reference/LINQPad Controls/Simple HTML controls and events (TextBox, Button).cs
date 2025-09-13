@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 var textBox = new TextBox().Dump ("Here's a simple textbox");
 

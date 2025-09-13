@@ -13,7 +13,6 @@
   <Namespace>Avalonia.Media</Namespace>
   <Namespace>Avalonia.Styling</Namespace>
   <Namespace>Avalonia.Themes.Fluent</Namespace>
-  <Namespace>Avalonia.Win32.Interoperability</Namespace>
   <Namespace>System.ComponentModel</Namespace>
   <Namespace>System.Threading.Tasks</Namespace>
 </Query>
@@ -66,7 +65,12 @@ void Main()
 		}
 	);
 
+#if MACOS
+	Application.Current.Run (new Window { Content = tabControl, Topmost = true });
+	Environment.Exit (0);
+#else
 	tabControl.Dump();
+#endif
 }
 
 void OnInit()    // Initialize Avalonia subsystem

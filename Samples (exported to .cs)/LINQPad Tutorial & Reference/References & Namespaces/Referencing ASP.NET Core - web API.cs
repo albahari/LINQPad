@@ -1,16 +1,16 @@
 // LINQPad Statements
 
-using Microsoft.AspNetCore.Builder
-using Microsoft.AspNetCore.Hosting
-using Microsoft.AspNetCore.Mvc
-using Microsoft.Extensions.Configuration
-using Microsoft.Extensions.DependencyInjection
-using Microsoft.Extensions.Hosting
-using Microsoft.Extensions.Logging
-using System.Net
-using System.Threading.Tasks
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System.Net;
+using System.Threading.Tasks;
 
-// The following query demonstrates how to run a web API application using ASP.NET minimal API.
+// The following script demonstrates how to run a web API application using ASP.NET minimal API.
 // In this case, we're exposing and endpoint that queries data from a SQLite demo database..
 
 // As with the previous sample, you don't need any NuGet packages when using ASP.NET.

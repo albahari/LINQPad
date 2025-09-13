@@ -3,7 +3,7 @@
 </Query>
 
 // The following demonstrates async/await in "C# Program" mode.
-// Notice that the Main method returns a Task. This allows LINQPad to know when your query is complete.
+// Notice that the Main method returns a Task. This allows LINQPad to know when your script is complete.
 
 async Task Main()
 {

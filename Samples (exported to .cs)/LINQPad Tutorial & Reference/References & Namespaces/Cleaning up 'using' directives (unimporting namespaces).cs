@@ -1,8 +1,8 @@
 // LINQPad Expression
 
-using Invalid1
-using Invalid2
-using Invalid3.Invalid4
+using Invalid1;
+using Invalid2;
+using Invalid3.Invalid4;
 
 /* NAMESPACE CLEANUP
 

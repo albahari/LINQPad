@@ -3,4 +3,4 @@
   <Namespace>System.Globalization</Namespace>
 </Query>
 
-// See query://../../Interactive_Regex_Evaluator
+// See script://../../Interactive_Regex_Evaluator

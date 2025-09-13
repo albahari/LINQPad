@@ -15,7 +15,7 @@ TimeZoneInfo.Local.Dump ("Bet you never knew this type existed!");
 
 // Dump returns exactly what it was given, so you can sneakily inject
 // a Dump (or even many Dumps) *within* an expression. This is useful
-// for monitoring a query as it progresses:
+// for monitoring a script as it progresses:
 
 new[] { 11, 5, 17, 7, 13 }  .Dump ("Prime numbers")
    .Where (n => n > 10)     .Dump ("Prime numbers > 10")

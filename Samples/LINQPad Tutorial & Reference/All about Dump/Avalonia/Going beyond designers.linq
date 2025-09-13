@@ -17,11 +17,11 @@ new MyWindow().Show();            // Render in separate window
 // This displays your UI in LINQPad without starting the application.
 
 // Advanced tip #1: In many cases, it works to also add a directive such as the following to 
-// the top of the query:
+// the top of the script:
 //
 // #load "c:\source\MyApplication\MyCustomUI.cs"
 //
-// When you run the query, the code in the #load-ed file takes precedence over what's
+// When you run the script, the code in the #load-ed file takes precedence over what's
 // in the referenced DLL. This means you can see the effect of changes to the file,
 // without needing to rebuild the DLL in Visual Studio.
 

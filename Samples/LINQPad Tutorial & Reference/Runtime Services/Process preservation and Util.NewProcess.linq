@@ -1,6 +1,6 @@
 <Query Kind="Statements" />
 
-// Each LINQPad query runs in its own process.
+// Each LINQPad script runs in its own process.
 // LINQPad normally preserves the process between executions (this is how Util.Cache can work).
 
 // Should this ever get in the way, you can tell LINQPad to use a fresh process on next execution:
@@ -11,5 +11,5 @@ Util.NewProcess = true;
 
 Process.GetCurrentProcess().Id.Dump ("Process ID");
 
-// In Edit | Preferences > Advanced, you can make this the default.
-// You can also ask LINQPad to kill the current process on demand by pressing Ctrl+Shift+F5.
+// In Settings > Execution, you can make LINQPad always use a new process per execution.
+// You can also ask LINQPad to kill the current process on demand by pressing Ctrl+Shift+F5 / Shift-Command-F5.

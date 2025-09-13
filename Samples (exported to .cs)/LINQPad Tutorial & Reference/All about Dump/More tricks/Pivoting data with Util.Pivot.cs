@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // You can swap rows and columns in the output with Util.Pivot:
 

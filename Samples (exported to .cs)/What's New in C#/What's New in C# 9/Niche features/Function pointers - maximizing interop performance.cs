@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using System.Runtime.CompilerServices
-using System.Runtime.InteropServices
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 // You can improve performance by applying the unmanaged keyword to the function pointer
 // declaration, and the [UnmanagedCallersOnly] attribute to the callback method.

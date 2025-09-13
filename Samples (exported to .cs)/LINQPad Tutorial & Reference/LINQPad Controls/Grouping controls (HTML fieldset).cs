@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // You can use an HTML div to group controls horizontally:
 new Div (

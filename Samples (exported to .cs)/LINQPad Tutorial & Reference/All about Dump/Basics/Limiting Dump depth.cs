@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // By default, LINQPad limits the recursion depth to 5 levels, when dumping.
 // You can change this as follows:

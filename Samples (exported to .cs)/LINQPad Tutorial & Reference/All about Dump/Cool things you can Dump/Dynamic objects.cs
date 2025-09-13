@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Dynamic
+using System.Dynamic;
 
 // You can dump dynamic objects, but there's a trick.
 

@@ -11,4 +11,4 @@ var task2 = Task.Delay (2500).ContinueWith (_ => "Completed!");
 task1.Dump ("Wait for it...");
 task2.Dump ("Wait for it...");
 
-// You can also await in LINQPad - see query://../../Using_Advanced_C#_Features_in_LINQPad
+// You can also await in LINQPad - see script://../../Using_Advanced_C#_Features_in_LINQPad

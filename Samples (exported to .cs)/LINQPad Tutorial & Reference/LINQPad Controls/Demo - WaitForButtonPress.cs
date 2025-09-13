@@ -1,10 +1,10 @@
 // LINQPad Program
 
-using LINQPad.Controls
-using System.Threading.Tasks
+using LINQPad.Controls;
+using System.Threading.Tasks;
 
 // The WaitForButtonPress method displays a button and waits for the user to click it.
-// You can add this method to the "My Extensions" query and use it as an alternative to Util.ReadLine().
+// You can add this method to the "My Extensions" script and use it as an alternative to Util.ReadLine().
 // An async version is also provided.
 
 void Main()
@@ -26,7 +26,7 @@ Task WaitForButtonPressAsync (string text = "Continue")
 		finished.TrySetResult (null);
 	})
 	{
-		IsMultithreaded = true    // Allows button to receive events while query is executing.
+		IsMultithreaded = true    // Allows button to receive events while the script is executing.
 	}.Dump();
 	return finished.Task;
 }

@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // With SGV, you can draw complex inline graphics in a single operation:
 
@@ -27,4 +27,4 @@ context.closePath();
 context.fill();
 context.stroke();");
 
-// See query://Adding_JavaScript_-_advanced_features for more info on InvokeScript.
+// See script://Adding_JavaScript_-_advanced_features for more info on InvokeScript.

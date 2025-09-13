@@ -3,7 +3,7 @@
   <AutoDumpHeading>true</AutoDumpHeading>
 </Query>
 
-// You can tell LINQPad to automatically generate headings via a toolbar button (or Ctrl+Shift+H).
+// You can tell LINQPad to automatically generate headings via a toolbar button (or Ctrl+Shift+H / Shift-Command-H).
 // The description is then populated automatically via C#'s [CallerArgumentExpression] feature.
 
 "the quick brown fox".Split().Dump();
@@ -15,4 +15,5 @@ TimeZoneInfo.Local.Dump();
 "This won't generate an automatic heading".Dump();
 new StringBuilder ("Neither will this").Dump();
 
-// You can also invoke the auto-heading behavior by calling DumpTell() instead of Dump().
+// You can also invoke the auto-heading behavior by calling DumpTell() instead of Dump():
+"the quick brown fox".Split().DumpTell();

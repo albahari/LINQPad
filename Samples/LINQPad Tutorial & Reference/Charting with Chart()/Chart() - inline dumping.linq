@@ -1,6 +1,6 @@
 <Query Kind="Statements" />
 
-// When you Dump a chart, it displays in its own tab after the query has finished executing.
+// When you Dump a chart, it displays in its own tab after the script has finished executing.
 // If you prefer to dump into the normal results window, call DumpInline() instead:
 
 string[] xSeries = { "John", "Mary", "Sue" };

@@ -1,9 +1,9 @@
 // LINQPad Expression
 
-#r: "nuget: System.Reactive"
+#r "nuget: System.Reactive"
 
-using System.Reactive
-using System.Reactive.Linq
+using System.Reactive;
+using System.Reactive.Linq;
 
 // You can also dump streams inside streams:
 

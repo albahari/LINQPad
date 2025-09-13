@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 var textArea = new TextArea ("Text area").Dump ("A TextArea control.");
 

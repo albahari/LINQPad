@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // LINQPad automatically assigns a unique ID to each underlying HTML element:
 
@@ -16,4 +16,4 @@ txt2.Dump();
 txt2.HtmlElement.ID.Dump ("ID manually assigned");
 
 // The ID can be useful when writing JavaScript functions.
-// For an example, see query://Demo_-_Bing_Maps
+// For an example, see script://Demo_-_Bing_Maps

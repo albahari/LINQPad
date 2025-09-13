@@ -11,7 +11,8 @@
 // checkbox on the authentication dialog. This will mean:
 //   (a) not having to re-authenticate after restarting LINQPad
 //   (b) being able to share tokens between multiple instances of LINQPad
-// LINQPad uses the Microsoft.Identity.Client.Extensions.Msal library to perform this job securely.
+// LINQPad uses the Microsoft.Identity.Client.Extensions.Msal library for this job, which uses the Windows Data
+// Protection API or macOS KeyChain.
 
 // In this example, we authenticate to the Azure Global Cloud Management API interactively.
 

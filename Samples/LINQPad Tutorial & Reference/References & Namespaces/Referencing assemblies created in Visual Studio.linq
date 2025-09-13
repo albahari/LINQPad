@@ -9,6 +9,6 @@ LINQPad does not lock your assembly files, so you can rebuild them and they'll i
 Should your assembly references other assemblies, LINQPad will automatically add the transitive references.
 If a .deps.json file is present, LINQPad will automatically parse it and harvest its NuGet references.
 
-You can also access the internal classes of your assemblies - see query://Accessing_internal_members_of_assemblies_(InternalsVisibleTo)
+You can also access the internal classes of your assemblies - see script://Accessing_internal_members_of_assemblies_(InternalsVisibleTo)
 
 */

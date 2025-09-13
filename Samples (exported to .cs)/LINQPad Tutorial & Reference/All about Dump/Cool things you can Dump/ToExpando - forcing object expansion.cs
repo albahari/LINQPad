@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Dynamic
+using System.Dynamic;
 
 // Another useful application of Util.ToExpando is to force LINQPad to expand the properties
 // of an object that you want to Dump.

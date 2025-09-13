@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Threading.Tasks
+using LINQPad.Controls;
+using System.Threading.Tasks;
 
 // You can subclass Control to create your own controls. Here's a really simple example:
 new H1 ("testing").Dump();
@@ -26,7 +26,7 @@ class H1 : Control
 	}
 }
 
-class Spinner : Control    // Define this in the "My Extensions" query to be reusable
+class Spinner : Control    // Define this in the "My Extensions" script to be reusable
 {
 	public Spinner() : base ("div") => HtmlElement.InnerHtml = "<div class='spinner'> </div>";
 

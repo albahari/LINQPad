@@ -1,15 +1,15 @@
 // LINQPad Program
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 /****************************************************************************************
                            INTERACTIVE REGEX EVALUATOR
 	
-	           Run this query to experiment with Regular Expressions!
+	           Run this script to experiment with Regular Expressions!
 	
-  You can also use the source code as a model for creating your own interactive queries.
+  You can also use the source code as a model for creating your own interactive scripts.
   
-  NB: You can open and run this query directly from the Help menu, or with Ctrl+Shift+F1.
+  NB: You can open and run this script directly from the Help menu, or with Ctrl+Shift+F1.
 	
 *****************************************************************************************/
 
@@ -60,8 +60,6 @@ void Main()
 
 	foreach (var control in helpBoxes.Cast<Control>().Append (inputBox).Append (patternBox).Append (sourceCodeBox))
 		control.Styles ["font-family"] = "consolas,monospace";
-		
-	inputBox.Styles ["font-size"] = patternBox.Styles ["font-size"] = "1.1em";
 
 	Update();
 
@@ -72,10 +70,10 @@ void Main()
 	results.Dump ("Matches");
 	sourceCodeBox.Dump();
 	new WrapPanel ("1em",
-		new Button ("Copy to clipboard", b => System.Windows.Forms.Clipboard.SetText (sourceCodeBox.Text)),
-		new Label ("Ctrl+Shift+C to clone query")).Dump();
-		
-	new Control ("small", "\r\nThis query uses LINQPad's HTML controls. Press Ctrl+R to see the source code.").Dump();
+		new Button ("Copy to clipboard", _ => sourceCodeBox.HtmlElement.CopyClipboard()),
+		new Label ((OperatingSystem.IsMacOS() ? "Shift-Command-S" : "Ctrl+Shift+C") + " to clone script")).Dump();
+
+	new Control ("small", $"\r\nThis script uses LINQPad's HTML controls. Press {(OperatingSystem.IsMacOS() ? "Command-T" : "Ctrl+R")} to see the source code.").Dump();
 
 	patternBox.Focus();
 	patternBox.SelectAll();
@@ -101,9 +99,8 @@ object GetResult (RegexOptions checkedOptions) =>
 	{
 		m.Index,
 		m.Length,
-		Value = new Hyperlink (m.Value,
-			h => inputBox.HtmlElement.InvokeScript (false, "eval",
-				 $"targetElement.setSelectionRange({m.Index}, {m.Index + m.Length}); targetElement.focus()")),
+		Value = new Hyperlink (m.Value, h => inputBox.HtmlElement.Run (
+			$"targetElement.setSelectionRange({m.Index}, {m.Index + m.Length}); targetElement.focus();")),
 		m.Success,
 		m.Name,
 		m.Groups

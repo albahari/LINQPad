@@ -1,7 +1,7 @@
 // LINQPad Statements
 
 // Try stepping through this, and dragging the yellow execution pointer with the mouse.
-// You can also use Ctrl+Shift+F10 (set next statement) to move the execution pointer to the cursor.
+// You can also use Debug | Set Next Statement to move the execution pointer to the cursor.
 
 "You".Dump();
 "can".Dump();

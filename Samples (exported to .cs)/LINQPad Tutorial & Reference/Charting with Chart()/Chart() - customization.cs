@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Drawing
+using System.Drawing;
 
 // Util.Chart uses the WinForms charting control under the covers. You can get at the underlying
 // charting control by calling ToWinFormsChart(), and then make tweaks and customizations:

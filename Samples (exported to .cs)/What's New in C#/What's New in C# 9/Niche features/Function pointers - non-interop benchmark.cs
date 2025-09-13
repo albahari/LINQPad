@@ -2,12 +2,12 @@
 
 #load "BenchmarkDotNet"
 
-#r: "nuget: BenchmarkDotNet"
+#r "nuget: BenchmarkDotNet"
 
-using BenchmarkDotNet.Attributes
-using System.Threading.Tasks
-using System.Runtime.CompilerServices
-using BenchmarkDotNet.Running
+using BenchmarkDotNet.Attributes;
+using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
+using BenchmarkDotNet.Running;
 
 // In non-interop scenarios, the performance gain from function pointers is negligible.
 //

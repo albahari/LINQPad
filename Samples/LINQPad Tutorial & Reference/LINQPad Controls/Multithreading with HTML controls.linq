@@ -10,4 +10,4 @@ multiThreadedButton.IsMultithreaded = true;
 // If the main thread is busy, events will queue up - unless you set IsMultithreaded to true.
 Thread.Sleep (5000);
 
-// See query://Demo_-_WaitForButtonPress for a more practical demo.
+// See script://Demo_-_WaitForButtonPress for a more practical demo.

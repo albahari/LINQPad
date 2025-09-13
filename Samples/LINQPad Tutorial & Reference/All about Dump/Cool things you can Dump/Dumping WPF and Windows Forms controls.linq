@@ -15,6 +15,8 @@
   <Namespace>System.Windows</Namespace>
 </Query>
 
+// NB: WPF and Windows Forms is not supported on macOS.
+
 new GroupBox 
 {
 	Header = "You can dump WPF and Windows Forms controls",
@@ -26,7 +28,7 @@ new GroupBox
 }
 
 // You can also dump Avalonia controls.
-// See query://../Avalonia
+// See script://../Avalonia
 
 // LINQPad also provides HTML controls that you can dump inline.
-// See query://../../LINQPad_Controls
+// See script://../../LINQPad_Controls

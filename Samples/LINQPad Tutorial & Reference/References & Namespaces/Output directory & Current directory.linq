@@ -1,15 +1,15 @@
 <Query Kind="Statements" />
 
-// LINQPad runs your queries in a temporary output folder which you can access with 
+// LINQPad runs your scripts in a temporary output folder which you can access with
 // AppContext.BaseDirectory or Environment.CurrentDirectory.
 
 AppContext.BaseDirectory.Dump ("Output folder");
 
 // To avoid unnecessary file I/O, LINQPad doesn't copy referenced assemblies into this folder
-// unless you tell it to by ticking a checkbox in Query Properties (F4) > Advanced. Doing so can be
+// unless you tell it to by ticking a checkbox in Script Properties (F4) > Advanced. Doing so can be
 // useful when working with dependency injection frameworks that enumerate files in the output folder.
 
-// You can create temporary files in the output folder, and they'll be deleted when the query closes.
+// You can create temporary files in the output folder, and they'll be deleted when the script closes.
 File.WriteAllText ("test.txt", "some content");
 Util.Cmd (@"dir");
 

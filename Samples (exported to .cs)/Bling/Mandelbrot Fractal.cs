@@ -2,10 +2,10 @@
 
 #LINQPad optimize+
 
-using System.Drawing
-using System.Threading.Tasks
-using System.Windows
-using System.Windows.Forms
+using System.Drawing;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Forms;
 
 // This renders the Mandelbrot fractal, leveraging data parallelism.
 // Left-click to zoom in; right-click to zoom out; middle-click to reset.

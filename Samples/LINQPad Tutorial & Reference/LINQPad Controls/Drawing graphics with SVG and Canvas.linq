@@ -27,4 +27,4 @@ context.closePath();
 context.fill();
 context.stroke();");
 
-// See query://Adding_JavaScript_-_advanced_features for more info on InvokeScript.
+// See script://Adding_JavaScript_-_advanced_features for more info on InvokeScript.

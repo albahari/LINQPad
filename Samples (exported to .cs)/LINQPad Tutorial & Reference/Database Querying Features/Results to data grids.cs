@@ -1,10 +1,9 @@
 // LINQPad Expression
 
-/* LINQPad gives you a choice between seeing results in rich text (default) or data grids.
+/* By default, LINQPad displays tabular data as HTML tables.
+However, if you click the "Results to Data Grids" toolbar button above, you'll see Data Grids instead.
 
-Use the toolbar buttons above to switch between the two.
-
-With data grids, you can display any number of rows (limited only by memory).
+With data grids, you can see up to 25 million rows.
 
 You can also
 	- click headers to sort data (and type into the columns for incremental search)
@@ -16,7 +15,7 @@ You can also
 Also, if you have a developer/premium license, you can edit output from LINQ-to-SQL and EF Core
 queries and save changes back to the database.
 
-The advantage of rich-text mode is that association properties can be expanded inline.
+The advantage of HTML mode is that association properties can be expanded inline.
 
 TIP: If you right-click the data grid toolbar button, you can set it as the default.
 TIP: In data grid mode, LINQPad displays the row count in the status bar, bottom right.

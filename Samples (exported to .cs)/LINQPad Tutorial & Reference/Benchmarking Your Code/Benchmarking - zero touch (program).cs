@@ -1,8 +1,8 @@
 // LINQPad Program
 
-using System.Security.Cryptography
+using System.Security.Cryptography;
 
-// When you set the query language to "C# Program", benchmarking becomes more powerful.
+// When you set the script language to "C# Program", benchmarking becomes more powerful.
 //
 // We'll start by testing the performance of an uncontended lock.
 //
@@ -12,7 +12,7 @@ object locker = new();
 
 void Main()
 {
-	// Highlight the following line of code and press Ctrl+Shift+B to benchmark:
+	// Highlight the following line of code and press Ctrl+Shift+B / Shift-Command-B to benchmark:
 	lock (locker) {}
 }
 

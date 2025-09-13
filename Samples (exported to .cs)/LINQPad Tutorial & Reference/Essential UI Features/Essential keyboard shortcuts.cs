@@ -1,32 +1,33 @@
 // LINQPad Statements
 
-/* To see a complete list of keyboard shortcuts, go to  Help | 'Keyboard Shorcuts'
+/* To see a complete list of keyboard shortcuts, go to Help | Search Commands.
 
 Here are the most important shortcuts for code scratchpad use:
 
-F5 or Alt+X     - Execute
+F5              - Execute  (you can also press Alt+X under Windows, or Shift-Command-X under macOS)
 Shift+F5        - Cancel
 
-Ctrl+1...Ctrl+9 - sets the Query Language. This is much faster than using the dropdown!
+Ctrl+1...Ctrl+9 - sets the script language. This is much faster than using the dropdown!
 
-Alt+1...Alt+3   - collapse/expand result expansion to 1,2 or 3 levels
+Alt+1...Alt+3   - collapse/expand result expansion to 1,2 or 3 levels (Control-Command-n on macOS)
 
-Ctrl+R          - Hide/Show query results
+Ctrl+R          - Hide/Show results (Command-R on macOS)
 
-F4              - Query properties
+F4              - Script properties
 
-Ctrl+Shift+C    - Clone query. This is your non-destructive experimentation button!
+Ctrl+Shift+C    - Clone script (Shift-Command-C on macOS).
+                  This is your non-destructive experimentation button!
                   (Although the samples are read-only, so you can never destroy them.)
 				  If you highlight a selection, just the selection is copied.
-				  You can also right-click a query from 'My Queries' and choose 'Use as Template for new query'.
+				  You can also right-click a script from 'My Scripts' and choose 'Use as Template for new script'.
 
-Ctrl+Tab        - switches between queries, just like Visual Studio.
+Ctrl+Tab        - (Option-Tab on macOS) - switches between scripts, just like Visual Studio.
                   (There's also Ctrl+PageUp/PageDown which ignores last use,
-				   and Alt+W which displays open queries alphabetically.)
+				   and Alt+W / Control-Command-W which displays open scripts alphabetically.)
 
-Ctrl+,          - locate/open a query by name (same as Visual Studio)
+Ctrl+,          - locate/open a script by name (same as Visual Studio)
 
-Ctrl+Shift+E    - toggles results auto "Scroll-to-end"
+Ctrl+Shift+E    - (Shift-Command-E on macOS) - toggles results auto "Scroll-to-end"
 
 
 FOR PRO/PREMIUM EDITION USERS:
@@ -39,7 +40,4 @@ F12                  - go to definition*            (same as Visual Studio)
 Ctrl+Shift+Up/Down   - go to prev/next symbol       (same as Visual Studio)
 Ctrl+E,D             - format document              (same as Visual Studio)
 
-*F12 invokes ILSpy if the definition is not within the source code.
-
-
-Go to Help | 'Keyboard Shorcuts' to view all keyboard/mouse shortcuts. */
+*F12 invokes ILSpy if the definition is not within the source code.  */

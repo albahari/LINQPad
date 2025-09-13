@@ -3,7 +3,7 @@
   <RuntimeVersion>9.0</RuntimeVersion>
 </Query>
 
-// C# 13 lock statement supports .NET 9's new Lock type:
+// C# 13 lock statement supports the Lock type introduced in .NET 9:
 
 var locker = new System.Threading.Lock();
 lock (locker)

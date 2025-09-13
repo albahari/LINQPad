@@ -1,7 +1,7 @@
 // LINQPad Program
 
-using System.ComponentModel
-using System.Runtime.CompilerServices
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 // Type declarations can include the new 'file' modifier to make the type visible only within the same file.
 

@@ -1,6 +1,6 @@
 // LINQPad Program
 
-using System.Globalization
+using System.Globalization;
 
 // TLDR: 'ref readonly' is just like 'in', but generates more warnings.
 // Stick with using 'in' if you don't like the ugliness of 'ref readonly'

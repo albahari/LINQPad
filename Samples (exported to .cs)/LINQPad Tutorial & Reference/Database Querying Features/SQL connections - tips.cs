@@ -10,7 +10,7 @@
 	
  -	LINQPad automatically pluralizes property names, unless you untick the 'Pluralize' checkbox.
  
- -	Passwords are encrypted with Windows DPAPI prior to storage. This means that if you send a query to
+ -	Passwords are encrypted with Windows DPAPI prior to storage. This means that if you send a script to
  	someone else, they won't see the connection password. If you want to override this and store the
 	password in plain text, click 'Advanced' and in the additional connection string parameters box, put:
 		password=<password>
@@ -19,6 +19,6 @@
  	whenever you use that connection, to you remind you.
 	
  -	If you have a developer/premium edition, you can query multiple SQL databases at once. This is explained here:
- 	http://www.linqpad.net/FAQ.aspx#cross-database
+ 	https://www.linqpad.net/FAQ.aspx#cross-database
 
 */

@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Spreadsheet
+using LINQPad.Spreadsheet;
 
 // LINQPad provides a simple API to create a spreadsheet cell-by-cell:
 

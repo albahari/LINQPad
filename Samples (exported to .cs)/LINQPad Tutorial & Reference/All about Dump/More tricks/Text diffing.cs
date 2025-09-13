@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using System.Globalization
-using System.Collections.ObjectModel
+using System.Globalization;
+using System.Collections.ObjectModel;
 
 // Util.Dif can also perform text diffing:
 

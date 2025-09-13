@@ -1,11 +1,11 @@
 // LINQPad Program
 
-using System.ComponentModel
-using System.Runtime.CompilerServices
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 // A nameof expression can now access method parameters when applying attributes
 // The main use-case for this is in conjunction with CallerArgumentExpression
-// ( see query://../What's_new_in_C#_10/CallerArgumentExpression.linq )
+// ( see script://../What's_new_in_C#_10/CallerArgumentExpression.linq )
 
 void Assert (
 	bool condition,

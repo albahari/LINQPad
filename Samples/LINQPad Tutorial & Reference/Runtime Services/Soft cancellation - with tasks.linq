@@ -6,7 +6,7 @@
 
 try
 {
-	await Task.Delay (Timeout.Infinite, QueryCancelToken);
+	await Task.Delay (Timeout.Infinite, ScriptCancelToken);
 }
 finally
 {

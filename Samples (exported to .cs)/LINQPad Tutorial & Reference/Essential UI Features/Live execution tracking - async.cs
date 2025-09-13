@@ -2,11 +2,11 @@
 
 #LINQPad optimize-
 
-using System.Threading.Tasks
+using System.Threading.Tasks;
 
 // LINQPad also tracks asynchronous operations (awaits).
 
-// Force debug mode on (just in case you've enabled 'release mode' in Preferences)
+// Force debug mode on (in case you've enabled 'Optimize' in the Status Bar)
 
 while (true)
 {
@@ -27,4 +27,4 @@ async Task World()
 }
 
 // Pressing Shift+Ctrl+J moves between the pending asynchronous operations.
-// See query://../Using_Advanced_C#_Features_in_LINQPad for more info on async and await
+// See script://../Using_Advanced_C#_Features_in_LINQPad for more info on async and await

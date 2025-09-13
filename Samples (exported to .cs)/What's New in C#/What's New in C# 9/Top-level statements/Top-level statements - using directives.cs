@@ -6,4 +6,4 @@ using System;
 Console.WriteLine ("Hello, world");
 
 // (This also now works in LINQPad, and is useful when you want to see your 'using' directives
-// in the script rather than in 'Query Properties'.)
+// in the script rather than in 'Script Properties'.)

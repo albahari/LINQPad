@@ -4,7 +4,7 @@
 
 from file in new DirectoryInfo (Util.LINQPadFolder).GetFiles()
 select Util.HighlightIf (
-	file.Extension == ".exe",
+	file.Extension == ".dll",
 	new
 	{
 		file.Name,

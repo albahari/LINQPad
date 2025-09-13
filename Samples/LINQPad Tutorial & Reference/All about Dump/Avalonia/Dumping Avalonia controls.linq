@@ -13,17 +13,25 @@
   <Namespace>Avalonia.Media</Namespace>
   <Namespace>Avalonia.Styling</Namespace>
   <Namespace>Avalonia.Themes.Fluent</Namespace>
-  <Namespace>Avalonia.Win32.Interoperability</Namespace>
   <Namespace>System.ComponentModel</Namespace>
   <Namespace>System.Threading.Tasks</Namespace>
 </Query>
 
 void Main()
 {
-	// When you dump Avalonia controls, LINQPad renders them in the output panel (just like with WPF and WinForms controls).
+	// You can use Avalonia in LINQPad.
+	// Under Windows, you can Dump Avalonia controls and LINQPad will render them in the output panel (just like with WPF and WinForms controls).
+	// Under macOS, call Application.Current.Run with a new Window.
 
-	var btn = new Button { Content = "Avalonia rocks!", HorizontalAlignment = HorizontalAlignment.Center }.Dump ("Avalonia");
+	var btn = new Button { Content = "Avalonia rocks!", HorizontalAlignment = HorizontalAlignment.Center };
 	btn.Click += (sender, args) => btn.Content = "Clicked";
+	
+#if MACOS
+	Application.Current.Run (new Window { Content = btn, Topmost = true });
+	Environment.Exit (0);
+#else
+	btn.Dump ("Avalonia");
+#endif
 }
 
 // The OnInit() hook method in LINQPad executes once when your process starts.

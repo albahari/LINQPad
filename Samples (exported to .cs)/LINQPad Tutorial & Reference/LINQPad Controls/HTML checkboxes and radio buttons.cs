@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // Here are some checkboxes:
 
@@ -14,4 +14,4 @@ var radio2 = new RadioButton ("group1", "Option 2").Dump();
 var radio3 = new RadioButton ("group1", "Option 3").Dump();
 
 // To lay them out horizontally rather than vertically, dump them inside a Div, WrapPanel 
-// or StackPanel - see query://Grouping_controls_(HTML_fieldset)
+// or StackPanel - see script://Grouping_controls_(HTML_fieldset)

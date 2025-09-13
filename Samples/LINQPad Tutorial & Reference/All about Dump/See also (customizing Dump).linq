@@ -2,4 +2,4 @@
   <Namespace>System.Globalization</Namespace>
 </Query>
 
-// For info on customizing Dump, see query://../Customization_&_Extensibility/Customizing_Dump
+// For info on customizing Dump, see script://../Customization_and_Extensibility/Customizing_Dump

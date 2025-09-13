@@ -21,8 +21,16 @@ var span2 = new Span ("big text");
 
 new Div (span1, span2).Dump();
 
+// span1 and span2 become the Children of the Div. You can also do it like this:
+
+var div2 = new Div();
+div2.Children.Add (new Span ("Test"));
+div2.Dump();
+
+// Note that you can CANNOT add Children after the control has been dumped.
+
 for (int i = 3; i < 100; i++)
 {
-	span2.Styles["font-size"] = i + "pt";   // See query://Styling_controls_(css)
+	span2.Styles["font-size"] = i + "pt";   // See script://Styling_controls_(css)
 	Thread.Sleep (20);
 }

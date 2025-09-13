@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using System.Globalization
+using System.Globalization;
 
 // If you need to represent three consecutive quotes in a raw string literal, use four
 // quotes instead as a delimiter. You can use as many quotes as you like:

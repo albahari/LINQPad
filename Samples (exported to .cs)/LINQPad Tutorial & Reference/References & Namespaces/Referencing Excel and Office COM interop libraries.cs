@@ -1,14 +1,14 @@
 // LINQPad Statements
 
-#r: "nuget: Microsoft.Office.Interop.Excel"
-#r: "nuget: Microsoft.Office.Interop.Outlook"
-#r: "nuget: Microsoft.Office.Interop.PowerPoint"
-#r: "nuget: Microsoft.Office.Interop.Word"
+#r "nuget: Microsoft.Office.Interop.Excel"
+#r "nuget: Microsoft.Office.Interop.Outlook"
+#r "nuget: Microsoft.Office.Interop.PowerPoint"
+#r "nuget: Microsoft.Office.Interop.Word"
 
-using Excel = Microsoft.Office.Interop.Excel
-using Outlook = Microsoft.Office.Interop.Outlook
-using PowerPoint = Microsoft.Office.Interop.PowerPoint
-using Word = Microsoft.Office.Interop.Word
+using Excel = Microsoft.Office.Interop.Excel;
+using Outlook = Microsoft.Office.Interop.Outlook;
+using PowerPoint = Microsoft.Office.Interop.PowerPoint;
+using Word = Microsoft.Office.Interop.Word;
 
 // You can reference Office and other COM libraries by adding a NuGet reference.
 //

@@ -32,4 +32,4 @@ namespace Foo
 }
 
 // For a full description of what you can do in 'C# Program' mode, click the link below:
-// query://../../What's_New_in_C#/What's_New_in_C#_9/Top-level_statements/LINQPad_note_-_C#_Statements_vs_C#_Program 
+// script://../../What's_New_in_C#/What's_New_in_C#_9/Top-level_statements/LINQPad_note_-_C#_Statements_vs_C#_Program 

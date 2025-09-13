@@ -1,7 +1,7 @@
 // LINQPad Statements
 
-using LINQPad.Controls
-using System.Globalization
+using LINQPad.Controls;
+using System.Globalization;
 
 "Search:".Dump();
 var searchBox = new TextBox().Dump();

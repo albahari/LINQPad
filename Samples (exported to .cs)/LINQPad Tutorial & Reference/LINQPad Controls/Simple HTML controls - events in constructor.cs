@@ -1,6 +1,6 @@
 // LINQPad Statements
 
-using LINQPad.Controls
+using LINQPad.Controls;
 
 // Most of the controls have constructors which let you attach commonly-used event handlers in one easy step.
 // We can simplify the preceding example as follows:

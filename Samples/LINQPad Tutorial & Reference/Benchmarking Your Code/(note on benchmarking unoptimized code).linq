@@ -8,7 +8,7 @@
 
 // This allows you to set breakpoints should you need to debug an issue that arises only during benchmarking.
 
-// Highlight the following code and press Ctrl+Shift+B to benchmark unoptimized code:
+// Highlight the following code and press Ctrl+Shift+B / Shift-Command-B to benchmark unoptimized code:
 // Comment out the directive above to compare performance with optimized code.
 
 long l = 0;
