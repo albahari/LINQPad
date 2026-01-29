@@ -28,3 +28,4 @@ void Test2 (int x = 123) => x.Dump();
 void Test3 (int x) => x.Dump();
 
 // Note that the ability to highlight and execute a method works only in 'C# Program' mode.
+// You can disable the 'execute selection' feature in Settings.

@@ -3,7 +3,7 @@
 </Query>
 
 // The follow enables JQuery (you would probably do this at the start of the script):
-Util.HtmlHead.AddScriptFromUri ("https://code.jquery.com/jquery-3.4.1.min.js");
+Util.HtmlHead.AddScriptFromUri ("https://code.jquery.com/jquery-3.7.1.min.js");
 
 var button = new Button ("Test").Dump();
 Util.JS.Run ($"$( 'button' ).html( 'Set via JQuery...' )");

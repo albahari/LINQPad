@@ -19,6 +19,8 @@ public static class MyExtensions
 // Now try cutting the method definition from the class above, and pasting it into the 'My Extensions' script.
 // That extension method will now work for all scripts.
 
+// TIP: Types in 'My Extensions' must be public to be accessible by scripts.
+//
 // TIP: If you have a paid LINQPad edition, pressing F12 over a method call will jump to its definition.
 //      This jumps into 'My Extensions', too.
 //

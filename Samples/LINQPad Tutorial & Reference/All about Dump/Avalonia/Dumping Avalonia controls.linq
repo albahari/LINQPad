@@ -25,7 +25,7 @@ void Main()
 
 	var btn = new Button { Content = "Avalonia rocks!", HorizontalAlignment = HorizontalAlignment.Center };
 	btn.Click += (sender, args) => btn.Content = "Clicked";
-	
+
 #if MACOS
 	Application.Current.Run (new Window { Content = btn, Topmost = true });
 	Environment.Exit (0);
@@ -34,7 +34,9 @@ void Main()
 #endif
 }
 
-// The OnInit() hook method in LINQPad executes once when your process starts.
+// The OnInit() hook method in LINQPad executes once when your process starts (like a static constructor).
+// **Note that OnInit() works only when your script has a Main() method (Program mode)**
+
 // This is where we need to initialize the Avalonia subsystem.
 
 void OnInit()
@@ -46,7 +48,7 @@ void OnInit()
 
 	// Edit the following line to change the theme. After editing, press Shift+F5 to kill the cached process.
 	Application.Current.Styles.Add (new FluentTheme());
-	
-	if (Util.IsDarkThemeEnabled) 
+
+	if (Util.IsDarkThemeEnabled)
 		Application.Current.RequestedThemeVariant = ThemeVariant.Dark;
 }

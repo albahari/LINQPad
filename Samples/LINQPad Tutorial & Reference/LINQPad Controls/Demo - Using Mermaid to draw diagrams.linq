@@ -1,27 +1,14 @@
 <Query Kind="Statements">
-  <Connection>
-    <ID>7855b4d6-efcd-4ded-9669-1800e77afdea</ID>
-    <NamingServiceVersion>2</NamingServiceVersion>
-    <Server>tcp:g3ztr3nte0.database.windows.net</Server>
-    <AllowDateOnlyTimeOnly>true</AllowDateOnlyTimeOnly>
-    <DeferDatabasePopulation>true</DeferDatabasePopulation>
-    <Database>main</Database>
-    <UserName>joe@albahari.com</UserName>
-    <Password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVXQi0EyUG06fNrubeRJ4YAAAAAACAAAAAAAQZgAAAAEAACAAAADDnKomo7jM+Pw1C5XMx2rGF8At0BeWCDbpWLND4yKobAAAAAAOgAAAAAIAACAAAADtYG3n4o+NXNi29n6zSE6gXgzF2gZ/JhXdnjyGW9LppxAAAAD04T5fxTk33rk9MqG4F9njQAAAAPKfzhrNEc1Q8BYcWiUN1HDos4gCpTJWo7KNCmL7hY7LDEnaNgUPkUJm9QxhjhD+VV7tWCZWfYOXoq9Kcb7iyDI=</Password>
-    <DbVersion>Azure</DbVersion>
-    <DisplayName>Licensing database</DisplayName>
-    <UniversalAuthentication>true</UniversalAuthentication>
-    <Persist>true</Persist>
-    <DriverData>
-      <LegacyMFA>false</LegacyMFA>
-    </DriverData>
-  </Connection>
   <Namespace>LINQPad.Controls</Namespace>
   <AutoDumpHeading>true</AutoDumpHeading>
 </Query>
 
 // This sample uses the Mermaid library to draw diagrams.
 
+if (Util.BrowserEngine.IsMSIE)
+	throw new InvalidOperationException ("This functionality is not supported in IE. " +
+	"Please enable the Chromium browser in Settings > Results");
+	
 // Load Mermaid.
 Util.HtmlHead.AddScriptFromUri ("https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js");
 

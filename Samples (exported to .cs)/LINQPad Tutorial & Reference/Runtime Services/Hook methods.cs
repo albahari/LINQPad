@@ -2,6 +2,7 @@
 
 // LINQPad lets you write special "hook" methods that are called at various stages of script execution.
 // These can be particularly useful in scripts that you #load - see https://www.linqpad.net/LinqReference.aspx
+// **Note that hook methods work only when your script has a Main() method (Program mode)**
 
 void Main()
 {	

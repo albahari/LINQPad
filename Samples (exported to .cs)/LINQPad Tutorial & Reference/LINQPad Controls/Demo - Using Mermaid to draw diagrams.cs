@@ -4,6 +4,10 @@ using LINQPad.Controls;
 
 // This sample uses the Mermaid library to draw diagrams.
 
+if (Util.BrowserEngine.IsMSIE)
+	throw new InvalidOperationException ("This functionality is not supported in IE. " +
+	"Please enable the Chromium browser in Settings > Results");
+	
 // Load Mermaid.
 Util.HtmlHead.AddScriptFromUri ("https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js");
 

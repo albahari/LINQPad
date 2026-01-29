@@ -21,8 +21,8 @@
 //       - under 0.3 milliseconds
 //
 // If it takes over 100ms, consider adding antivirus exclusions for these process names:
-//  - LINQPad8.exe (LINQPad8 on MacOS)
-//  - LINQPad8-x64.exe
+//  - LINQPad9.exe (LINQPad9 on MacOS)
+//  - LINQPad9-x64.exe
 //  - devenv.exe (if you use Visual Studio)
 //
 // Alternatively, on Windows 11, enable Dev Drive: https://learn.microsoft.com/en-us/windows/dev-drive/

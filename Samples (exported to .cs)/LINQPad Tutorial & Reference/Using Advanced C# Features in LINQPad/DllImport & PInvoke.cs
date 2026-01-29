@@ -1,0 +1,22 @@
+// LINQPad Program
+
+using System.Runtime.InteropServices;
+
+// You can use DllImport to call unmanaged functions (P/Invoke).
+
+void Main()
+{
+#if UNIX
+	Console.WriteLine ($"User ID: {getuid()}");
+#else
+	IsUserAnAdmin().Dump ("We have administrative elevation");
+#endif	
+}
+
+[DllImport ("shell32.dll", EntryPoint = "#680")]
+public static extern bool IsUserAnAdmin ();
+
+[DllImport ("libc")]
+static extern uint getuid();
+
+// [LibraryImport] is also supported - see following example.
