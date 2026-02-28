@@ -8,9 +8,13 @@
 new Hyperlinq ("https://www.linqpad.net", "LINQPad's home page").Dump();
 
 // The second is to execute a delegate on demand:
-new Hyperlinq (() => RSA.Create().ToXmlString (true).Dump(), "Generate public/private keypair").Dump();
+new Hyperlinq (
+	() => RSA.Create().ToXmlString (true).Dump(),
+	"Generate public/private keypair",
+	runOnNewThread:true).Dump();
+// runOnNewThread:true allows the delegate to run before the script has completed: this is useful if your script blocks.
 
-// The third is to execute dynamically generated code on demand:
+// The third is to execute dynamically generated code on demand (in a new tab):
 new Hyperlinq (ScriptLanguage.Statements, "for (int i = 0; i < 10; i++) i.Dump();", "Dynamically generated code").Dump();
 
 // LINQPad also has a more low-level Hyperlink class in the LINQPad.Controls namespace

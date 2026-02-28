@@ -13,3 +13,5 @@ var customers = new[]
 };
 
 customers.Chart (c => c.Name, c => c.TotalOrders).Dump();   // Don't forget to Dump it!
+
+// Tip: to keep the chart into the main output window, call DumpInline() instead of Dump().

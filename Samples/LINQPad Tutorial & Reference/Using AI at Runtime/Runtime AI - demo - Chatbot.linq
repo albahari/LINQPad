@@ -6,6 +6,7 @@
 </Query>
 
 // This uses LINQPad's runtime AI integration to implement a Chatbot, using Avalonia for the UI.
+// (This was largely written with LINQPad's AI coding agent).
 
 using Avalonia;
 using Avalonia.Controls;

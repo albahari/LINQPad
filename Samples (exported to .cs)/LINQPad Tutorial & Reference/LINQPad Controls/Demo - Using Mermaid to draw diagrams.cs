@@ -4,103 +4,98 @@ using LINQPad.Controls;
 
 // This sample uses the Mermaid library to draw diagrams.
 
-if (Util.BrowserEngine.IsMSIE)
-	throw new InvalidOperationException ("This functionality is not supported in IE. " +
-	"Please enable the Chromium browser in Settings > Results");
-	
-// Load Mermaid.
-Util.HtmlHead.AddScriptFromUri ("https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js");
+string definition = """
+	flowchart TD
+	    A[User] -->|Clicks| B[Button]
+	    B --> C{Valid?}
+	    C -- Yes --> D[Render Diagram]
+	    C -- No  --> E[Show Error]
+	""";
 
-// Add a function to render all .mermaid blocks.
-Util.HtmlHead.AddScript ("""
-	window.renderAllMermaid = async function(themeName) {
-	  if (!window._mermaidInitialized != themeName) {
-	    mermaid.initialize({ startOnLoad: false, theme: themeName });
-	    window._mermaidInitialized = themeName;
-	  }
-	  await mermaid.run({ querySelector: '.mermaid' });
-	};
-	""");
+var mermaid = new MermaidControl (definition, "500px");
 
-// Define a function for saving the mermaid content to svg format.
-Util.HtmlHead.AddScript ("""
-	window.saveMermaidAsSvg = function() {
-	  const svg = document.querySelector('.mermaid svg');
-	  if (!svg) { external.log('No diagram to save'); return; }
-	  const svgData = svg.outerHTML;
-	  const blob = new Blob([svgData], { type: 'image/svg+xml' });
-	  const url = URL.createObjectURL(blob);
-	  const a = document.createElement('a');
-	  a.href = url; a.download = 'diagram.svg'; a.click();
-	};
-	""");
+var editor = new TextArea (definition) { Rows = 20, Cols = 60 }.AddStyle ("font-family", "monospace");
+editor.TextInput += (s, e) => mermaid.Definition = editor.Text;
 
-var mermaidHost = new Div();
-mermaidHost.Styles ["width"] = "500px";
+new FlexBox ("row", "1em", "wrap",
+	new FlexBox ("column", ".3em",
+		editor,
+		new Button ("Save SVG", b => mermaid.SaveSvg())),
+	mermaid
+).Dump();
 
-var editor = new TextArea (Samples.FlowChart);
-editor.Rows = 20;
-editor.Styles ["font-family"] = "consolas,monospace";
-editor.TextInput += (s, e) => Render();
-Util.ThemeChanged += (sender, args) => Render();
-
-var buttons = new WrapPanel (".5em",
-
-	new Button ("Sample: Flowchart", b => UpdateMermaid (Samples.FlowChart)),
-	new Button ("Sample: Sequence", b => UpdateMermaid (Samples.Sequence)),
-	new Button ("Sample: Class", b => UpdateMermaid (Samples.Class)),
-	new Button ("Save SVG", b => Util.JS.RunFunction ("saveMermaidAsSvg"))
-);
-
-Util.HorizontalRun (true,
-	Util.VerticalRun ("Mermaid:", editor, buttons),
-	mermaidHost).Dump();
-	
-Render();
-
-void Render()
+// Custom control to encapsulate the mermaid.js library.
+// AI can write these for you - press Ctrl+I or Command-I.
+class MermaidControl : Control
 {
-	mermaidHost.HtmlElement.InnerHtml = $"<pre class='mermaid'>{editor.Text}</pre>";
-	
-	// Call renderAllMermaid to tell Mermaid to render
-	Util.JS.RunFunction ("renderAllMermaid", Util.IsDarkThemeEnabled ? "dark" : "light");
-}
+	string _definition;
 
-void UpdateMermaid (string text)
-{
-	editor.Text = text;
-	Render();
-}
+	public string Definition
+	{
+		get => _definition;
+		set { _definition = value; UpdateDiagram(); }
+	}
 
-class Samples
-{
-	public const string
-		FlowChart = """
-			flowchart TD
-			    A[User] -->|Clicks| B[Button]
-			    B --> C{Valid?}
-			    C -- Yes --> D[Render Diagram]
-			    C -- No  --> E[Show Error]
-			""",
+	public MermaidControl (string definition = "", string width = null, string height = null) : base ("div")
+	{
+		_definition = definition;
+		if (width != null) Styles ["width"] = width;
+		if (height != null) Styles ["height"] = height;
+	}
 
-		Sequence = """
-			sequenceDiagram
-			    participant A as Alice
-			    participant B as Bob
-			    A->>B: Hello Bob, how are you?
-			    B-->>A: I am good thanks!
-			""",
+	// Fires just *before* the control is dumped
+	protected override void OnRendering (EventArgs e)
+	{
+		// Define the necessary scripts. Note that calls to to Util.HtmlHead.* are idempotent
+		// (scripts/CSS is injected only once, no matter how many calls you make).
+		
+		Util.HtmlHead.AddScriptFromUri ("https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js");
 
-		Class = """
-			classDiagram
-			    class Animal {
-			      +String name
-			      +int age
-			      +void eat()
-			    }
-			    class Dog {
-			      +void bark()
-			    }
-			    Animal <|-- Dog
-			""";
+		Util.HtmlHead.AddScript ("""
+			async function RenderMermaid(el, themeName) {
+				try {
+					mermaid.initialize({ startOnLoad: false, theme: themeName, suppressErrorRendering: true });
+					const pre = el.querySelector('.mermaid');
+					if (!pre) return;
+					await mermaid.run({ nodes: [pre] });
+				} catch(err) {
+					el.innerHTML = '<pre style="color:red;">' + err.message + '</pre>';
+				}
+			}
+			function SaveMermaidSvg(el) {
+				const svg = el.querySelector('svg');
+				if (!svg) { external.log('No diagram to save'); return; }
+				const blob = new Blob([svg.outerHTML], { type: 'image/svg+xml' });
+				const url = URL.createObjectURL(blob);
+				const a = document.createElement('a');
+				a.href = url; a.download = 'diagram.svg'; a.click();
+			}
+			""");
+
+		base.OnRendering (e);
+	}
+
+	// Fires *after* the control is dumped. You can safely invoke JavaScript from here.
+	protected override void OnReady (EventArgs e)
+	{
+		Util.ThemeChanged += (sender, args) => UpdateDiagram();
+		UpdateDiagram();		
+		base.OnReady (e);
+	}
+
+	void UpdateDiagram()
+	{
+		// Without this check, we could end up calling HtmlElement.Run multiple times before 
+		// the control has been dumped, which is inefficient.
+		if (!IsReady) return;
+		
+		HtmlElement.InnerHtml = $"<pre class='mermaid'>{_definition}</pre>";
+		HtmlElement.Run ($"RenderMermaid(targetElement, '{(Util.IsDarkThemeEnabled ? "dark" : "light")}');");
+	}
+
+	public void SaveSvg()
+	{
+		if (!IsReady) return;
+		HtmlElement.Run ("SaveMermaidSvg(targetElement);");
+	}
 }

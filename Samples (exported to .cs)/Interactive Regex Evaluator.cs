@@ -63,15 +63,21 @@ void Main()
 
 	Update();
 
-	new WrapPanel (helpBoxes).Dump();
-	new WrapPanel (patternBox, clearPattern).Dump ("Pattern");
+	new FlexBox (helpBoxes) { Wrap = "wrap" }.Dump();
+	new FlexBox (patternBox, clearPattern) { Gap = ".5em" }.Dump ("Pattern");
 	inputBox.Dump ("Input text");
-	new WrapPanel (optionBoxes).Dump();
+	new FlexBox (optionBoxes) { Wrap = "wrap", Gap = "0 .5em" }.Dump();
 	results.Dump ("Matches");
 	sourceCodeBox.Dump();
-	new WrapPanel ("1em",
+	
+	new FlexBox (
 		new Button ("Copy to clipboard", _ => sourceCodeBox.HtmlElement.CopyClipboard()),
-		new Label ((OperatingSystem.IsMacOS() ? "Shift-Command-S" : "Ctrl+Shift+C") + " to clone script")).Dump();
+		new Label ((OperatingSystem.IsMacOS() ? "Shift-Command-S" : "Ctrl+Shift+C") + " to clone script"))
+	{
+		Gap = "1em",
+		Align = "center"
+	}
+	.Dump();
 
 	new Control ("small", $"\r\nThis script uses LINQPad's HTML controls. Press {(OperatingSystem.IsMacOS() ? "Command-T" : "Ctrl+R")} to see the source code.").Dump();
 

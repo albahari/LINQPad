@@ -8,11 +8,14 @@ For example, press Ctrl+I/Command-I and enable "Include Connection Schema".
 
 Then ask it this:
 
-	Show me the biggest one-hit wonders
+			Show me the biggest one-hit wonders
 
-Or:
-
-	Export the biggest one-hit wonders to Excel 
+OR:
+			Export the biggest one-hit wonders to Excel 
+	
+OR:
+			Write an interactive front-end for this database
+	
 
 TIP: This works efficiently with big schemas, too. LINQPad works with the model to figure
      out which portions of the schema it needs, and sends it only those portions.

@@ -5,10 +5,10 @@ using System.Globalization;
 
 // You can also respond to JavaScript events that are not exposed in the control.
 
-var div = new Div (new Label ("click me"));
-div.Styles ["height"] = "10em";
-div.Styles ["width"] = "10em";
-div.Styles ["border"] = "1px black solid";
+var div = new Div (new Label ("click me"))
+	.AddStyle ("height", "10em")
+	.AddStyle ("width", "10em")
+	.AddStyle ("border", "1px orange solid");
 
 // Just call AddEventListener on the HtmlElement:
 
