@@ -26,9 +26,8 @@ new Literal ("same sentence.</p>").DumpInline();
 
 // (If you call Dump instead of DumpInline, the content will be wrapped in a <div>.)
 // DumpInline is also useful when dumping non-block elements such as spans.
-new Span ("one ").DumpInline();
-new Span ("two ").DumpInline();
-new Span ("three ").DumpInline();
+new Span ("left ").DumpInline();
+new Span ("right ").DumpInline();
 
 // You cannot change the content of a literal after it's been dumped (because it has no ID).
 // If you need that ability, use a control such as a span or div:

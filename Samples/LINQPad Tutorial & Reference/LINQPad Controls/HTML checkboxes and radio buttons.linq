@@ -11,7 +11,6 @@ var chk2 = new CheckBox ("Include Views",  false, c => c.Checked.Dump()).Dump();
 
 var radio1 = new RadioButton ("group1", "Option 1").Dump();
 var radio2 = new RadioButton ("group1", "Option 2").Dump();
-var radio3 = new RadioButton ("group1", "Option 3").Dump();
 
-// To lay them out horizontally rather than vertically, dump them inside a Div, WrapPanel 
-// or StackPanel - see script://Grouping_controls_(HTML_fieldset)
+// To lay them out horizontally rather than vertically, dump them inside a Div, WrapPanel or StackPanel
+// - see script://Grouping_controls_(WrapPanel_StackPanel_FieldSet_flexbox)

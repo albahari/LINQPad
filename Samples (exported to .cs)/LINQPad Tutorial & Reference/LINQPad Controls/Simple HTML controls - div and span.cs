@@ -10,7 +10,7 @@ var div = new Div().Dump();
 for (int i = 3; i < 100; i++)
 {
 	div.HtmlElement.InnerHtml = $"This line has <span style='font-size:{i}pt'>big text</span>";	
-	// await Task.Delay(20) will work just as well:
+	// await Task.Delay(20) works just as well:
 	Thread.Sleep (20);        
 }
 
@@ -27,7 +27,7 @@ var div2 = new Div();
 div2.Children.Add (new Span ("Test"));
 div2.Dump();
 
-// Note that you can CANNOT add Children after the control has been dumped.
+// (Note that you can CANNOT add Children after the control has been dumped.)
 
 for (int i = 3; i < 100; i++)
 {

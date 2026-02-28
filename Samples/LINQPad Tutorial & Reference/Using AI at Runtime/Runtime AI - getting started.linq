@@ -7,5 +7,12 @@
 
 Util.AI.Ask ("What physics principles are required to implement GPS?").Dump();
 
-// Note that by default, results are cached, so if you call an AI method again with identical parameters,
-// the result will appear immediately. You can disable this by calling Util.AI.Ask with bypassCache:true.
+/* NOTES:
+
+	• By default, results are cached, so if you call an AI method again
+	  with identical parameters, the result will appear immediately.	  
+	  You can disable caching calling Util.AI.Ask with bypassCache:true.
+	  
+	• LINQPad's AI coding agent understands every feature of Util.AI.Ask.
+	  Just press Ctrl+I / Command-I and tell it what you want to do!
+*/

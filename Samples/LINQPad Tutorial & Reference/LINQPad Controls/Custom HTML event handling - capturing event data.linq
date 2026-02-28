@@ -5,10 +5,10 @@
 
 // You can capture JavaScript event data and return it to the C# event handler.
 
-var div = new Div (new Label ("click me"));
-div.Styles ["height"] = "10em";
-div.Styles ["width"] = "10em";
-div.Styles ["border"] = "1px black solid";
+var div = new Div (new Label ("click me"))
+	.WithStyle ("height", "10em")
+	.WithStyle ("width", "10em")
+	.WithStyle ("border", "1px orange solid");
 
 // Specify the event properties that you want to capture using the following overload of AddEventListener:
 

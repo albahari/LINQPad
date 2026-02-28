@@ -1,15 +1,20 @@
 // LINQPad Statements
 
-// When you Dump a chart, it displays in its own tab after the script has finished executing.
+// When you Dump a chart under Windows, it displays in its own tab after the script has finished executing.
 // If you prefer to dump into the normal results window, call DumpInline() instead:
 
 string[] xSeries = { "John", "Mary", "Sue" };
 int[] ySeries = { 100, 120, 140 };
+var chart = xSeries.Chart().AddYSeries (ySeries, Util.SeriesType.Pie);
 
-xSeries.Chart().AddYSeries (ySeries, Util.SeriesType.Pie).DumpInline ("Pie", 500, 500);
+chart.DumpInline ("Pie", 500, 500);
 
 // You can optionally specify a heading and render size in pixels:
-xSeries.Chart().AddYSeries (ySeries).DumpInline ("Sales", 500, 300);
+chart.DumpInline ("Sales", 500, 300);
 
-// Calling DumpInline() is a shortcut for doing this:
-xSeries.Chart().AddYSeries (ySeries).ToBitmap (500, 300).Dump ("Sales");
+// Calling DumpInline() is a shortcut for converting the chart into an HTML EChart and dumping it:
+chart.ToEChart ("Sales", "500px", "300px").Dump();
+
+// For more info on EChart, see script://../LINQPad_Controls/EChart_for_advanced_&_interactive_charting
+
+// Note: on macOS, charts always display inline using EChart, so Dump is the same as DumpInline.

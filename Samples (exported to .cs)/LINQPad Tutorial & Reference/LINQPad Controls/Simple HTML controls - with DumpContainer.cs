@@ -4,6 +4,7 @@ using LINQPad.Controls;
 
 // As you type a URI into the textbox below, it automatically creates and dumps the properties of a Uri object.
 // We use a DumpContainer to update the Uri in place (rather than calling Dump which *appends* to the output window).
+// Util.ToExpando forces object expansion.
 
 var textBox = new TextBox ("https://www.linqpad.net").Dump();
 
