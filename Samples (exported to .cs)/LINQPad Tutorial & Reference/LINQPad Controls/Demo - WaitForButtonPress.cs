@@ -19,14 +19,18 @@ void WaitForButtonPress (string text = "Continue") => WaitForButtonPressAsync (t
 
 Task WaitForButtonPressAsync (string text = "Continue")
 {
-	var finished = new TaskCompletionSource<object>();
+	var finished = new TaskCompletionSource();
 	var button = new Button (text, btn =>
 	{
 		btn.Visible = false;
-		finished.TrySetResult (null);
-	})
-	{
-		IsMultithreaded = true    // Allows button to receive events while the script is executing.
-	}.Dump();
+		finished.TrySetResult();
+	});
+	
+	// Allow button to receive events while the script is executing (and the main thread is blocked).
+	// Without this line, the script will deadlock!
+	button.IsMultithreaded = true;
+	
+	button.Dump();
+	
 	return finished.Task;
 }

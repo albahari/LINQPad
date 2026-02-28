@@ -10,17 +10,16 @@ var table = new Table (noBorders:true, cellVerticalAlign:"middle");
 table.Rows.Add (new Label ("First name"), new TextBox());
 table.Rows.Add (new Label ("Last name"), new TextBox());
 table.Rows.Add (new Label ("City"), new TextBox());
-table.Rows.Add (new Label ("Post code"), new TextBox());
 
 table.Dump();     // You must dump the table *after* adding the rows.
 
 new Button (
 	"Give me alternating row color!", 
-	// You can do some cool things with CssChildRules (hover over the property to see help).
-	b => table.CssChildRules ["tr:nth-child(even)", "background"] = "beige"
+	// CssChildRules lets you style child elements with a selector:
+	b => table.CssChildRules ["tr:nth-child(even)", "background"] = Util.IsDarkThemeEnabled ? "#242" : "beige"
 	).Dump();
 
 new Button (
-	"I'm curious... show me the HTML",
+	"Show me the HTML",
 	b => table.HtmlElement.ToString(true).Dump()
 	).Dump();

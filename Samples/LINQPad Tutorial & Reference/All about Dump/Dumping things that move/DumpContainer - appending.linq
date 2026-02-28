@@ -11,6 +11,3 @@ for (int i = 0; i < 10; i++)
 	dc.AppendContent (i);
 	Thread.Sleep(200);
 }
-
-
-

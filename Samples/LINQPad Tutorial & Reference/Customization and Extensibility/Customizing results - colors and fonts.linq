@@ -19,6 +19,9 @@ Util.Highlight ("highlight").Dump();    // see also script://../All_about_Dump/M
 Util.WithStyle ("This is light green", "background:lightgreen; font-family:Segoe UI").Dump();
 Util.RawHtml ("<h1>Big</h1>").Dump();
 
+// (Note that Util.WithStyle sets the whole CSS style attribute in one string, unlike with LINQPad's HTML 
+// controls, where each property is set individually.)
+
 // If you write styling methods in My Extensions, you'll be able to call them from anywhere.
 
 // For more info on Util.Highlight, see script://../All_about_Dump/More_tricks/Highlighting_data

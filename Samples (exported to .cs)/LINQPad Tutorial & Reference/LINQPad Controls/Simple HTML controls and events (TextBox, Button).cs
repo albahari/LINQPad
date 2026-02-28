@@ -2,6 +2,7 @@
 
 using LINQPad.Controls;
 
+// The TextBox control emits a standard <input type="text">
 var textBox = new TextBox().Dump ("Here's a simple textbox");
 
 var button = new Button ("Click me").Dump ("Here's a simple button");

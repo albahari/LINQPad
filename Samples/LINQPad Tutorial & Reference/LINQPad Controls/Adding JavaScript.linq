@@ -28,3 +28,7 @@ Util.HtmlHead.AddScript ("function Square(x) { return x * x }");
 Util.JS.EvalFunction ("Square", 3).Dump();
 
 // (You can call Util.HtmlHead.AddScript anytime - not just at the start of the script.)
+
+// NOTE:
+//    All of the Run* and Eval* methods run JavaScript in the global script scope.
+//    If you need to exit early using a 'return' statement, wrap your code in an IIFE.

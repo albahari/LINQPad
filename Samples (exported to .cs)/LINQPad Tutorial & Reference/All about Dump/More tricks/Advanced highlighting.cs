@@ -21,7 +21,10 @@ files.Dump();
 
 // Util.WithStyle gives you even more control:
 
-Util.WithStyle ("test", "font-size:30pt").Dump();
+Util.WithStyle ("test", "font-size:30pt; font-weight:bold").Dump();
+
+// Note that with Util.WithStyle, we set the (whole) CSS style attribute in one string.
+// (With LINQPad's HTML controls, we set each property individually.)
 
 // For more ways to customize Dump, see
 // script://../../Customization_and_Extensibility/Customizing_results_-_colors_and_fonts
