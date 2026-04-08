@@ -7,6 +7,8 @@
 To activate it, either press Ctrl+P / Command-P and choose a non-agentic prompt,
 or press Alt+I / Command-I (for the default system prompt).
 
+**For LINQPad coding tasks, you typically get better results with the coding agent**
+
 Unlike the coding agent, the chat tool does not send additional information
 to the model. Everything that's sent and received is visible in the chat.
 

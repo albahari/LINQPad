@@ -1,17 +1,16 @@
-// LINQPad Program
-
-#r "nuget: Azure.Identity"
-#r "nuget: Azure.ResourceManager.Resources"
-#r "nuget: Azure.ResourceManager.Sql"
-
-using Azure;
-using Azure.Core;
-using Azure.Identity;
-using Azure.ResourceManager;
-using Azure.ResourceManager.Resources;
-using Azure.ResourceManager.Sql;
-using System.Threading.Tasks;
-using System.Net.Http;
+<Query Kind="Program">
+  <NuGetReference>Azure.Identity</NuGetReference>
+  <NuGetReference>Azure.ResourceManager.Resources</NuGetReference>
+  <NuGetReference>Azure.ResourceManager.Sql</NuGetReference>
+  <Namespace>Azure</Namespace>
+  <Namespace>Azure.Core</Namespace>
+  <Namespace>Azure.Identity</Namespace>
+  <Namespace>Azure.ResourceManager</Namespace>
+  <Namespace>Azure.ResourceManager.Resources</Namespace>
+  <Namespace>Azure.ResourceManager.Sql</Namespace>
+  <Namespace>System.Threading.Tasks</Namespace>
+  <Namespace>System.Net.Http</Namespace>
+</Query>
 
 // This script demonstrates how to add the current IP address to the firewall of an Azure SQL Server database,
 // using the Azure.ResourceManager API. No passwords are stored or handled because we authenticate interactively.
@@ -53,7 +52,7 @@ async Task UpdateFirewallRule (SubscriptionResource subscription, string resourc
 	var server = resourceGroup.GetSqlServer (dbServerName).Value;
 	
 	// Dump existing firewall rules...
-	server.GetSqlFirewallRules().Select (s => s.Get().Value.Data).Dump ("Existing firewall rules", depth:1);
+	server.GetSqlFirewallRules().AsEnumerable().Select (s => s.Get().Value.Data).Dump ("Existing firewall rules", depth:1);
 	
 	Console.Write ($"Updating rule for {dbServerName}... ");
 	

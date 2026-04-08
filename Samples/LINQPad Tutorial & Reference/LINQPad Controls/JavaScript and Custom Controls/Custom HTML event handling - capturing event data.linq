@@ -1,7 +1,7 @@
-// LINQPad Statements
-
-using LINQPad.Controls;
-using System.Globalization;
+<Query Kind="Statements">
+  <Namespace>LINQPad.Controls</Namespace>
+  <Namespace>System.Globalization</Namespace>
+</Query>
 
 // You can capture JavaScript event data and return it to the C# event handler.
 
@@ -39,4 +39,4 @@ div.HtmlElement.AddEventListener (
 div.Dump();
 
 // You can also handle custom events that you define in JavaScript.
-// For an example, see script://Demo_-_Bing_Maps
+// For an example, see script://Writing_custom_HTML_controls_-_wrapping_a_JavaScript_library

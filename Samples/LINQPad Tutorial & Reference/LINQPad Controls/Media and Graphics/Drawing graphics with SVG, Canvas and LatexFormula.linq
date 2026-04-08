@@ -1,6 +1,6 @@
-// LINQPad Statements
-
-using LINQPad.Controls;
+<Query Kind="Statements">
+  <Namespace>LINQPad.Controls</Namespace>
+</Query>
 
 // With the Sgv control, you can draw complex inline graphics in a single operation:
 new Svg ("""
@@ -18,7 +18,7 @@ canvas.HtmlElement.Run ("""
 	context.fillStyle = 'red';
 	context.fill();
 	""");
-// See script://Adding_JavaScript_-_advanced_features for more info on InvokeScript.
+// See script://../JavaScript_and_Custom_Controls/Adding_JavaScript_-_advanced_features for more info on InvokeScript.
 
 // The MarkdownViewer control displays markdown. (This is the same as calling Util.Markdown().)
 new MarkdownViewer ("**bold** and *italic*").Dump();
@@ -27,5 +27,5 @@ new MarkdownViewer ("**bold** and *italic*").Dump();
 string latex = @"\int_0^\infty e^{-x^2} dx";
 new LatexViewer (latex, fontSize: "130%").Dump ("Integral");
 
-// See script://Writing_custom_HTML_controls_-_wrapping_a_JavaScript_library 
+// See script://../JavaScript_and_Custom_Controls/Writing_custom_HTML_controls_-_wrapping_a_JavaScript_library 
 // for info on how to wrap JavaScript libraries yourself.

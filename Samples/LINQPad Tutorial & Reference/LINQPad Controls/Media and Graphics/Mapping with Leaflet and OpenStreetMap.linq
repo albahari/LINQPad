@@ -3,4 +3,4 @@
   <AutoDumpHeading>true</AutoDumpHeading>
 </Query>
 
-// See script://./Writing_custom_HTML_controls_-_wrapping_a_JavaScript_library.linq"
+// See script://../JavaScript_and_Custom_Controls/Writing_custom_HTML_controls_-_wrapping_a_JavaScript_library

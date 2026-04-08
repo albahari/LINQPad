@@ -1,12 +1,12 @@
-<Query Kind="Statements">
-  <Namespace>LINQPad.Controls</Namespace>
-</Query>
+// LINQPad Statements
+
+using LINQPad.Controls;
 
 // LINQPad's EChart control lets you create advanced interactive charts using the Apache ECharts library.
 // EChart is essentially a thin wrapper over ECharts that handles the JavaScript plumbing.
 //
 // EChart is very flexible, but for simple non-interactive charting scenarios,
-// Util.Chart is an easier option - see script://../Charting_with_Chart()
+// Util.Chart is an easier option - see script://../../Charting_with_Chart()
 
 // BASIC LINE CHART
 

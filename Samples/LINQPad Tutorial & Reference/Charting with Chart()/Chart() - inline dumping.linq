@@ -19,6 +19,6 @@ chart.ToEChart ("Sales", "500px", "300px").Dump();
 // This is great if you want to keep everything on the same page.
 new LINQPad.Controls.FlexBox (chart.ToEChart(), new LINQPad.Controls.Button("button")).Dump();
 
-// For more info on EChart, see script://../LINQPad_Controls/EChart_for_advanced_&_interactive_charting
+// For more info on EChart, see script://../LINQPad_Controls/Media_and_Graphics/EChart_for_advanced_&_interactive_charting
 
 // Note: on macOS, charts always display inline using EChart, so Dump is the same as DumpInline.

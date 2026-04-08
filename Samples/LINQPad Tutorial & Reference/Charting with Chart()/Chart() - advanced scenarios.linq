@@ -4,7 +4,7 @@
 
 // For more flexibility, you can create an EChart directly.
 // EChart is a LINQPad HTML control that wraps the Apache ECharts.js library.
-// See script://../LINQPad_Controls/EChart_for_advanced_&_interactive_charting for a tutorial.
+// See script://../LINQPad_Controls/Media_and_Graphics/EChart_for_advanced_&_interactive_charting for a tutorial.
 
 using LINQPad.Controls;    // EChart lives in LINQPad.Controls.
 
