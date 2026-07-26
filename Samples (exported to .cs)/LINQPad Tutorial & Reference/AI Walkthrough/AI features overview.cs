@@ -13,8 +13,12 @@ CODING AGENT
 AI CHAT
 	AI Chat, with or without editor integration.
 	Can be used as transparent prompt engineering tool.
+	Works as a full coding agent if Copilot is installed.
 	
 SQL-TO-LINQ CONVERSION
 	Performs a deep schema-aware conversion from SQL to LINQ.
+	
+LINQPad also includes a Claude Code panel, which works in parallel to all other AI features.
+To activate Claude Code, go to Settings | Claude Code.
 	
 */

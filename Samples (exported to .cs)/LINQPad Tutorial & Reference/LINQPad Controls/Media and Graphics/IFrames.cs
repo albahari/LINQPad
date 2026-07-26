@@ -23,4 +23,5 @@ var completeHtml = @"<!doctype html>
 new IFrame (completeHtml, autoSize:true).Dump ("iframe - html");
 
 // Display an embedded YouTube video:
+// NB: This may not work on MacOS, due to Safari security policy.
 new IFrame (new Uri ("https://www.youtube.com/embed/mLX1sYVf-Xg")).Dump ("iframe - web page");

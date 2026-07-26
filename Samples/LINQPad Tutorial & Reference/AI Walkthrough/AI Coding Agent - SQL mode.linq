@@ -11,6 +11,7 @@
       <EFProvider>Microsoft.EntityFrameworkCore.Sqlite</EFProvider>
       <MapSQLiteDateTimes>true</MapSQLiteDateTimes>
       <MapSQLiteBooleans>true</MapSQLiteBooleans>
+      <MapSQLiteDecimals>true</MapSQLiteDecimals>
     </DriverData>
   </Connection>
   <Namespace>System.Net</Namespace>

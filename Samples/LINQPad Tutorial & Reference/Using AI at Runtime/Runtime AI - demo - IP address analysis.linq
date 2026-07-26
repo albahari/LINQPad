@@ -5,10 +5,10 @@
   <AutoDumpHeading>true</AutoDumpHeading>
 </Query>
 
-/* LINQPad's AI coding agent knows about Util.AI.Ask, so it can write code for you!
+/* TIP: LINQPad's AI coding agent knows about Util.AI.Ask, so you can use AI to write code to use AI.
  
-   This script was written by pressing Ctrl+I / Command-I and typing the following:
-      "Write a script that uses AI to analyze an IP address"
+This script itself was written by pressing Ctrl+I / Command-I and asking it the following:
+	"Write a script that uses AI to analyze an IP address"
 */
 
 // Fetch the user's public IP as the default
@@ -18,7 +18,7 @@ var myIp = await http.GetStringAsync("https://api.ipify.org/?format=text");
 var ip = Util.ReadLine("Enter an IP address to analyze", myIp.Trim());
 
 // Fetch geo/IP info from a free API
-var ipInfo = await http.GetStringAsync($"http://ip-api.com/json/{ip}");
+var ipInfo = await http.GetStringAsync($"http://www.ip-api.com/json/{ip}");
 ipInfo.Dump("Raw IP Info");
 
 // Ask AI to analyze

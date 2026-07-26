@@ -2,7 +2,10 @@
 
 using System.Net;
 
-/* The coding agent is LINQPad's most advanced AI tool.
+/* LINQPad's coding agent works from directly within the editor.
+
+With all providers except Claude Code, it manually orchestrates to
+maximize token efficiency. (With Claude Code, it uses Claude's agentic loop.)
 
 With the coding agent, you can:
 	- ask questions about the current script
@@ -39,10 +42,12 @@ string GetResponse (string password)
 }
 
 // TIP: Anthropic's *Sonnet* and *Opus* are terrific models to use with the coding agent.
-//      With thinking enabled, they deliver the best results in the least time.
-//      Both are available through OpenRouter or Anthropic.
+//      Both are available through OpenRouter, Anthropic or via Claude Code.
 //
 // TIP: To focus the model's attention on a particular piece of code, 
 //      select that code in the editor before submitting.
 //
 // TIP: The Undo/Redo buffer works with diffs.
+//
+// TIP: If you're using Copilot or Claude Code, you can get similar results
+//      by going directly to Chat.

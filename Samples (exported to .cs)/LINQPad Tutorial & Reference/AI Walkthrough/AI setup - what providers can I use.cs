@@ -8,13 +8,22 @@ LINQPad supports the following:
 		- Supports the latest version of all models - both premium and low-cost
 		- Integrated sign-up / signin
 		- No ID verification required
-		- Pay-as-you go
+		- Pay-as-you go		
+		
+	GitHub Copilot (recommended)
+		- Works with your Copilot account
+		- Supports a full agent in chat
+		
+	Claude Code (recommended)
+		- Full agent
+		- Runs in a separate 'Claude Code' tab in parallel to all other AI features
 		
 	OpenAI (ChatGPT)
 		- Use your existing OpenAI account
+		- May require ID upload to access premium models
 		
 	Anthropic (Claude Sonnet, Opus and Haiku)
-		- Use your existing account
+		- Use your existing Anthropic account (usage-based billing)
 		
 	Azure OpenAI
 	

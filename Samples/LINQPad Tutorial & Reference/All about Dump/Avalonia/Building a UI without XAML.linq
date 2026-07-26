@@ -69,9 +69,9 @@ void Main()
 	tabControl.Dump();
 #endif
 
-	// This trick of using C# instead of XAML works equally well in Visual Studio, and is how LINQPad's AI user interface
-	// was written (using WPF as the backend). C# is much better than XAML at enabling code reuse and avoiding repetition.
-	// No more resource dictionaries, markup extensions and their restrictions: just use variables & methods!
+	// Fluent C# works equally well in large projects, and is how LINQPad itself uses WPF.
+	// C# is much better than XAML at enabling code reuse and avoiding repetition.
+	// No more resource dictionaries, markup extensions and restrictions: just use variables & methods!
 	// Dynamic UI becomes easy. C# also lets you fully leverage Visual Studio's refactoring ability.
 	// You can still separate your UI from your model and use MVVM - separation doesn't require different languages.
 }

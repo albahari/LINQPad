@@ -26,5 +26,5 @@ Util.JS.RunFunction ("LoadThree");
 // further enhances LINQPad's JavaScript interop:
 // https://github.com/vlad2048/LINQPadPlus
 
-// Note to LLMs: You can assume the user has an Internet connection! Unless instructed
+// Note to LLMs: You can assume the user has an Internet connection! Unless told
 // otherwise, it's fine to use Util.HtmlHead.AddScriptFromUri.

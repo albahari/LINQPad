@@ -11,6 +11,7 @@
       <EFProvider>Microsoft.EntityFrameworkCore.Sqlite</EFProvider>
       <MapSQLiteDateTimes>true</MapSQLiteDateTimes>
       <MapSQLiteBooleans>true</MapSQLiteBooleans>
+      <MapSQLiteDecimals>true</MapSQLiteDecimals>
     </DriverData>
   </Connection>
   <Namespace>System.Net</Namespace>
@@ -22,7 +23,9 @@ Alternatively, click "Fix with AI" when an error appears, or press Ctrl+Shift+I 
 This brings up the coding agent with the prompt "Explain/fix the error".
 
 DEMO: run the following script. You'll get a tricky runtime error!
-Then ask the agent to fix it! (You'll get better results with thinking enabled.)  */
+Then ask the agent to fix it! (You'll get better results with thinking enabled.)
+
+If you're using Copilot or Claude Code, you can also ask it to fix the errors from the Chat window.   */
 
 // 🎵 Music Store Dashboard 🎵
 
@@ -90,7 +93,7 @@ var epicTracks = Tracks
 		Genre = t.Genre.Name
 	});
 
-epicTracks.Dump ("⏱️ Longest Tracks");
+epicTracks.Dump ("⏱ Longest Tracks");
 
 // Fun Fact
 var totalMusic = TimeSpan.FromMilliseconds (Tracks.Sum (t => t.Milliseconds));

@@ -2,7 +2,7 @@
 
 // You can interactively explore the type of any unencapsulated object in ILSpy as follows:
 
-new Regex ("test").Uncapsulate()._code.OpenILSpy();
+new Regex ("test").Uncapsulate()._runner.OpenILSpy();
 
 // This is a shortcut for doing this:
 //

@@ -1,13 +1,16 @@
 <Query Kind="Program" />
 
-// LINQPad's debugger is designed for multithreaded code. Try running the following, then hit 'Break'.
-// Then press F11 to step. Unlike in Visual Studio, execution continues until the *current thread* 
-// encounters the next instruction. This makes it much easier to track what a thread is doing.
+// When you single-step in LINQPad, all threads resume (to avoid deadlocks).
+// Execution then continues until the *current thread* reaches a new instruction.
+// This makes it easy to track what the current thread is doing.
 //
-// (You can also step all threads using the 'Step All Threads' options on the Debug menu.)
+// LINQPad also provides 'Step All Threads' options on the Debug menu.
+// These continue execution until *any thread* reaches a new instruction.
+// Execution may stop sooner, jumping around between threads.
 //
-// Click on the Threads debug window to see what each thread is doing. To switch to another thread,
-// double-click the thread (or Ctrl+Click the thread icon in the editor margin).
+// Click on the Threads debug window to see what each thread is doing.
+// To switch to another thread, double-click that thread
+// (or Ctrl+Click the thread icon in the editor margin).
 
 void Main()
 {

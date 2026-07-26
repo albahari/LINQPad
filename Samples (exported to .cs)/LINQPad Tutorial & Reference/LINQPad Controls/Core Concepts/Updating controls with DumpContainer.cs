@@ -11,30 +11,18 @@ using LINQPad.Controls;
 
 // Here's a simple todo list that demonstrates this:
 
-var todos = new List<string>();
-var todoList = new DumpContainer();
-var input = new TextBox();
-var addButton = new Button ("Add", _ =>
-{
-	todos.Add (input.Text);
-	input.Text = "";
-	Refresh();
-});
+var items = new List<string>();
+var dc = new DumpContainer();
 
-new FieldSet ("Todo List",
-	new FlexBox ("row", ".5em", input, addButton).AddStyle ("margin-bottom", ".5em"),
-	todoList
-).Dump();
+void Refresh() => dc.Content = items.Count == 0
+	? (object)"No items yet."
+	: new Div (items.Select ((item, i) => new Div (new Span ($"{i + 1}. {item}"))));
 
 Refresh();
 
-void Refresh() => todoList.Content =
-	new FlexBox ("column", ".5em",
-		todos.Select ((todo, i) =>
-			new FlexBox ("row", ".5em",
-				new Button ("✓", _ => { todos.RemoveAt (i); Refresh(); }),
-				new Span (todo))
-			{
-				Align = "center"
-			}
-		));
+var input = new TextBox();
+new Div (
+	new Span (input, new Button ("Add", _ => { items.Add (input.Text); input.Text = ""; Refresh(); })),
+	dc
+).Dump ("Todo List");
+

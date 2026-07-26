@@ -16,12 +16,10 @@ new Label ("Test")
 // Note that with controls, we set styles *individually* (unlike with Util.WithStyle and DumpContainer.Style).
 // WRONG: new Label ("Test").AddStyle ("padding: 10px; font-size: 20pt").Dump(); // Will not compile!
 
-// The following listbox changes color as you select items:
-var listBox = new SelectBox (SelectBoxKind.ListBox,
-	new[] { "Red", "Green", "Violet", "Blue", "Orange" },
-	onSelectionChanged: lst => lst.Styles ["background"] = lst.SelectedOption.ToString()
-).Dump ("Listbox");
+// The following textbox grows its font size as you type:
+int fontSize = 10;
+new TextBox (onTextInput: txt => txt.Styles ["font-size"] = $"{fontSize++}pt").Dump();
 	
 // To add CSS style declarations at the document level:
 Util.HtmlHead.AddStyles ("button { color:orange }");
-var btn = new Button ("Orange").Dump();
+new Button ("Orange").Dump();

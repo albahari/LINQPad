@@ -8,13 +8,16 @@ You can enable:
 	- manual completion (on demand with Shift+Space or Option-Space)
 	- automatic completion (automatically completes as you type)
 
-You can choose a different model for manual vs automatic completion.
+If your AI provider is GitHub Copilot, LINQPad will use Copilot's
+unmetered LSP API, using Copilot's predefined LSP model.
 
-By default, LINQPad uses a fast cheap model for automatic completion,
-and a more powerful model for manual completion.
-
-TIP: If you're unhappy with an automatic completion suggestion,
-     activate manual completion to refresh with the more powerful model.  */
+With other providers, you can choose a model: one for manual completion
+and one for automatic completion. By default, LINQPad uses a fast cheap 
+model for automatic completion, a more powerful model for manual completion.
+If you're unhappy with an automatic completion suggestion, activate manual 
+completion to refresh with the more powerful model.
+	 
+*/
 
 void Main()
 {

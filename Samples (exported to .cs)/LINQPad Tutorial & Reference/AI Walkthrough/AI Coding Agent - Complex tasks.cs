@@ -13,4 +13,8 @@ Ask it this:
 
 It's likely that the game will have glitches on the first attempt.
 Activate the coding agent again, and ask it to fix whatever is wrong.
-Then ask it to refine the game logic.  */
+Then ask it to refine the game logic.
+
+If you're using Copilot or Claude Code, you can also give it the instruction from Chat.
+
+*/

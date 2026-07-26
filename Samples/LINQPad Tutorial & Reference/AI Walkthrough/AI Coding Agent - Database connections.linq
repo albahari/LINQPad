@@ -11,6 +11,7 @@
       <EFProvider>Microsoft.EntityFrameworkCore.Sqlite</EFProvider>
       <MapSQLiteDateTimes>true</MapSQLiteDateTimes>
       <MapSQLiteBooleans>true</MapSQLiteBooleans>
+      <MapSQLiteDecimals>true</MapSQLiteDecimals>
     </DriverData>
   </Connection>
   <Namespace>System.Net</Namespace>
@@ -36,4 +37,7 @@ TIP: This works efficiently with big schemas, too. LINQPad works with the model 
      out which portions of the schema it needs, and sends it only those portions.
 	 
 TIP: The model knows whether the connection is LINQ-to-SQL or EF Core, and whether
-     the database is SQL Server, PostgreSQL, SQLite, MySQL or Oracle.  */
+     the database is SQL Server, PostgreSQL, SQLite, MySQL or Oracle.
+	 
+TIP: If you're using Copilot or Claude Code, the Chat window can also access the
+     current connection (with your permission).  */
